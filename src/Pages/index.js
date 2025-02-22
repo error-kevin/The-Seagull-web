@@ -7,10 +7,7 @@ export { default as Signup } from './Sign-up/Sign-up';
 export {default as Team} from './Members/Members';
 export {default as About} from './About/About';
 export {default as Contact} from './Contact/Contact';
-export {default as Sponsors} from './Sponsors/Sponsors';
 export {default as Products} from './Products/Products';
-export {default as Careers} from './Careers/careers';
-export {default as Gallery} from './Gallery/Gallery';
 
 
 

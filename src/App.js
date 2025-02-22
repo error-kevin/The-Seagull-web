@@ -3,15 +3,12 @@ import {
   Home,
   Signin,
   Unauthorised,
-  Gallery,
   Pagenotfound,
   Products,
   Team,
   About,
   Signup,
   Contact,
-  Sponsors,
-  Careers,
 } from "./Pages";
 import Layout from "./components/Layout";
 import "./App.css";
@@ -55,10 +52,8 @@ const App = () => {
           <Route path="/pagenotfound" element={<Pagenotfound />} />
           <Route path="/members" element={<Team />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/careers" element={<Careers />} />
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/g" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route element={<PersistLogin />}>

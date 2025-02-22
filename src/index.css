@@ -31,7 +31,7 @@ a {
 :root {
   /* --bg-img:url('./assets/BGs/BG\ Plain.png'); */
   /* --bg-img-vertical:url('./assets/BGs/BG\ Plain\ -\ vertical.png'); */
-  --bg2-img:url('./assets//BGs/abstract.png');
+  --bg2-img: url("./assets//BGs/abstract.png");
   --font-family-akira: "Akira", sans-serif;
   --font-family-manrope: "Manrope", sans-serif;
   --font-family-montserrat: "Montserrat", sans-serif;
@@ -71,7 +71,7 @@ a {
   --font-size-21xl: 40px;
   --font-size-17xl: 36px;
 
-  --font-color: white;
+  --font-color: black;
 
   --color-gray-100: #12131e;
   --events-cards: rgba(30, 30, 44, 0.7);

@@ -5,8 +5,9 @@
   background-color: transparent;
 
   height: 75px;
-  background-image: var(--bg2-img);
-  background-size: cover;
+  background-color: white;
+
+  /* background-size: cover; */
   /* backdrop-filter: blur(15px); */
 }
 
@@ -101,7 +102,7 @@
   text-shadow: 0px 0px 10px var(--glow-dark);
 }
 .navbar-links_container p {
-  color: white;
+  color: var(--font-color);
   font-size: 18px;
   font-weight: 700;
   margin: 0px;
