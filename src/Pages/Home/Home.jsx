@@ -9,7 +9,7 @@ import { partnerData, partnerRes, BGData, BGRes } from "./home-data";
 const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    document.title = "Home | My Agrawal Holidays";
+    document.title = "Home | The Seagull Store";
   }, []);
 
   return (
@@ -24,7 +24,7 @@ const Home = () => {
               <img className="home-hero-logo" src={inditechlogo} alt="" />
             </div>
             <div className="home-hero-text-container">
-              <h1 className="home-hero-text">Welcome To My Agrawal Holidays</h1>
+              <h1 className="home-hero-text">Welcome To The Seagull Store</h1>
             </div>
           </div>
           <div className="home-bottom-container">
