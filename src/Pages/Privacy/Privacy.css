@@ -1,3 +1,128 @@
-#map {
-    height: 100%;
+.privacy-heading-text{
+  font-family: var(--font-family-space);
+  text-align: center;
+}
+.privacy-cgc-logo{
+  height: 80px;
+  backdrop-filter: blur(5px);
+}
+h1,p,h2,li{
+  font-family: var(--font-family-space);
+  text-align: left;
+}
+.privacy-cec-logo{
+  height: 180px;
+  backdrop-filter: blur(5px);
+  
+}
+.privacy-header-center-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+.privacy-naac-logo{
+  height: 60px;
+  backdrop-filter: blur(5px);
+}
+.privacy-header-container{
+  display: flex;
+  padding: 0rem 0rem 0rem 0rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.privacy-main{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 1rem;
+  padding: 2rem;
+  min-height: calc(100vh-75px);  
+}
+
+.privacy-text-box{
+  width: 100%;
+  padding: 1rem 2rem;
+  
+}
+.privacy-college-text{
+  text-align: center;
+  font-family: var(--font-family-space);
+}
+.privacy-college-heading{
+  text-align: center;
+  font-family: var(--font-family-space);
+}
+
+.privacy-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.privacy-core{
+  box-shadow: 2px 2px 14px 4px white;
+  backdrop-filter: blur(12px);
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+
+
+.privacy-college-slideshow {
+  height: 100%;
+  width: 100%;
+}
+
+
+.privacy-Carousel{
+padding: 1rem;
+
+}
+.privacy-card {
+box-shadow: 0 4px 8px 0 var(--black-drop-shadow);
+width: 100%;
+height:450px;
+align-self: center;
+align-items: center;
+justify-self: center;
+justify-content: center;
+text-align: center;
+font-family: arial;
+}
+
+.privacy-product-image {
+  align-self: center;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  justify-content: center;
+  align-self: center;
+  object-fit: cover;
+}
+
+
+
+
+@media(max-width:750px){
+  .privacy-college-text{
+    font-size: 15px;
   }
+}
+

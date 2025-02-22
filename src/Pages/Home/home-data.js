@@ -1,110 +1,52 @@
-function importAll(r) {
-  return r.keys().map(r);
-}
-
-// Partner Carousel
-const partnerimages = importAll(
-  require.context("../../assets/Gallery", false, /\.(png|jpe?g|JPG|webp|jfif)$/)
-);
-const noimg = partnerimages.length;
-
-export const partnerRes = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 1920 },
-    items: noimg <= 5 ? noimg : 5,
-    slidesToSlide: 1,
-  },
-  desktop: {
-    breakpoint: { max: 1920, min: 1024 },
-    items: noimg <= 4 ? noimg : 4,
-    slidesToSlide: 1,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 800 },
-    items: noimg <= 3 ? noimg : 3,
-    slidesToSlide: 1,
-  },
-  minitab: {
-    breakpoint: { max: 800, min: 464 },
-    items: noimg <= 2 ? noimg : 2,
-    slidesToSlide: 1,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: noimg <= 1 ? noimg : 1,
-    slidesToSlide: 1,
-  },
-};
-
-export const partnerData = partnerimages.map((image, index) => {
-  const fileNameWithExtension = image.default
-    ? image.default.split("/").pop()
-    : image.split("/").pop();
-  const [fileName, extension] = fileNameWithExtension.split(".");
-  const fullName = [fileName, extension].join(".");
-
-  return {
-    id: index + 1,
-    imageurl: image.default || image,
-    url: `https://${fullName}`,
-  };
-});
-//-------------------------------------------
-
-// Home BG Carousel
-const BGimages = importAll(
-  require.context("../../assets/BGs", false, /\.(png|jpe?g|JPG|webp|jfif)$/)
-);
-
-export const BGRes = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 1024 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-  desktop: {
-    breakpoint: { max: 1024, min: 800 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-  tablet: {
-    breakpoint: { max: 800, min: 464 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-};
-
-export const BGData = BGimages.map((image, index) => {
-  return {
-    id: index + 1,
-    imageurl: image.default || image,
-  };
-});
-
-export const Event_Data = [
+export const updatedata = [
   {
-    name: "Best Price In Industry",
-    icon: "💰",
-    desc: "We offer unbeatable prices with no hidden fees. Find the best deals in the travel industry and save big on your next trip.",
+    date: "24th Jan 2025",
+    headline: "Hackathon Registration Deadline",
+    description: "Registration for the upcoming Hackathon closes soon!",
+    link: "/register",
+    type: "Event",
   },
   {
-    name: "24x7 Customer Service",
-    icon: "📞",
-    desc: "Our dedicated support team is available around the clock to assist you with any queries or issues, ensuring a smooth and worry-free travel experience.",
+    date: "20th Jan 2025",
+    headline: "New Blog: Master React",
+    description:
+      "New blog post published: Mastering React in 7 Days.New blog post published: Mastering React in 7 Days.New blog post published: Mastering React in 7 Days.",
+    link: "/blog/react-7-days",
+    type: "Blog",
   },
   {
-    name: "Hassle Free Booking",
-    icon: "🛫",
-    desc: "Enjoy a seamless booking process with just a few clicks. From flights to accommodations, we make planning your trip effortless and quick.",
+    date: "15th Jan 2025",
+    headline: "GDG SVVV Meetup Announced",
+    description: "GDG SVVV Meetup scheduled for 30th Jan.",
+    link: "/meetup-details",
+    type: "Announcement",
   },
   {
-    name: "Tailor Made Packages",
-    icon: "✈️",
-    desc: "Customize your trip exactly how you want it. Choose from a variety of packages and experiences designed to fit your preferences.",
+    date: "10th Jan 2025",
+    headline: "Tech Talk on AI Ethics",
+    description: "Join our Tech Talk on AI Ethics this Friday!",
+    link: "/events/ai-ethics",
+    type: "Event",
+  },
+  {
+    date: "5th Jan 2025",
+    headline: "React Workshop Registrations Open",
+    description: "Learn React from scratch in our 2-day workshop.",
+    link: "/workshops/react-basics",
+    type: "Workshop",
+  },
+  {
+    date: "1st Jan 2025",
+    headline: "Happy New Year from GDG SVVV",
+    description: "Wishing everyone a fantastic year ahead!",
+    link: "/announcements/new-year",
+    type: "Announcement",
+  },
+  {
+    date: "30th Dec 2024",
+    headline: "Web Dev Bootcamp Highlights",
+    description: "Recap of the Web Development Bootcamp held last week.",
+    link: "/highlights/web-bootcamp",
+    type: "Blog",
   },
 ];

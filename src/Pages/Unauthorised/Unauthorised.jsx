@@ -1,6 +1,6 @@
 import React from 'react';
 import './Unauthorised.css';
-import unauthorised from '../../assets/Unauthorised.jpg'
+import unauthorised from '../../assets/401.svg'
 import { useNavigate} from 'react-router-dom';
 
 

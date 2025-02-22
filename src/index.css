@@ -1,126 +1,80 @@
-body {
-  line-height: normal;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  margin: 0;
-}
-h1 {
-  margin: 0;
-}
-h3 {
-  margin: 0;
-}
-p {
-  margin: 0;
-}
-a {
-  color: unset;
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 
 @font-face {
   font-family: "Akira";
-  src: url("/src//assets//Fonts/Akira\ Expanded\ Demo.otf") format("opentype");
+  src: url("/src/assets/Fonts/Akira Expanded Demo.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
+body {
+  /* Uncomment if you want to use a background image */
+  /* background-image: url('./assets/BGs/BG Plain.png'); */
+  background-color: #f1f3f4;
+  line-height: normal;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    135deg,
+    #4286f5 25%,
+    #ea4235 25%,
+    #ea4235 50%,
+    #109d58 50%,
+    #109d58 75%,
+    #fabd03 75%
+  );
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Use transparent or a color */
+}
+
 :root {
-  /* --bg-img:url('./assets/BGs/BG\ Plain.png'); */
-  /* --bg-img-vertical:url('./assets/BGs/BG\ Plain\ -\ vertical.png'); */
-  --bg2-img: url("./assets//BGs/abstract.png");
-  --font-family-akira: "Akira", sans-serif;
   --font-family-manrope: "Manrope", sans-serif;
+  --font-family-akira: "Akira", sans-serif;
+  --font-family-space: "Montserrat", sans-serif;
   --font-family-montserrat: "Montserrat", sans-serif;
   --font-family-source: "Source Sans Pro", sans-serif;
   --font-family-redhatdisplay: "Red Hat Display", sans-serif;
-  --font-family-space: "Space Grotesk", sans-serif;
-  --font-family-mova: "Mova", sans-serif;
-  --fg-color: #0c274e;
-  --fg2-color: #fba708;
-  --bg-color: #437eb1;
 
-  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  /* Default colors */
+  --fg-color: #4285f4;
+  --bg-color: #f1f3f4;
+  --font-color1: white;
+  --font-color2: black;
+  --gdgyellow: #fabd03;
+  --gdgblue: #4285f4;
+  --gdgred: #ea4235;
+  --gdggreen: #109d58;
+}
 
-  --color-bg: #152039;
-  --color-bg2: #d7df23;
-  --color-menu: #071427;
-  --color-footer: #031b34;
+/* You can toggle light and dark themes with a class on the body */
+body.light-mode {
+  --fg-color: #4285f4;
+  --bg-color: #f1f3f4;
+  --font-color1: white;
+  --font-color2: black;
+}
 
-  --color-blog: #042c54;
-  --color-text: #81afdd;
-  --color-subtext: #ff8a71;
-
-  --font-source-sans-pro: "Source Sans Pro";
-  --font-red-hat-display: "Red Hat Display";
-  --font-space-grotesk: "Space Grotesk";
-  --font-montserrat-alternates: "Montserrat Alternates";
-
-  --font-size-xl: 20px;
-  --font-size-6xl: 25px;
-  --font-size-5xl: 24px;
-  --font-size-13xl: 32px;
-  --font-size-15xl: 34px;
-  --font-size-11xl: 30px;
-  --font-size-61xl: 80px;
-  --font-size-41xl: 60px;
-  --font-size-21xl: 40px;
-  --font-size-17xl: 36px;
-
-  --font-color: black;
-
-  --color-gray-100: #12131e;
-  --events-cards: rgba(30, 30, 44, 0.7);
-  --color-gray-200: rgba(18, 19, 30, 0.9);
-  --color-gray-300: rgba(133, 132, 135, 0.35);
-  --color-white: #fff;
-  --color-midnightblue: #442077;
-  --color-iobutton: #919191;
-  --color-border: #c8ccd4;
-
-  --color-dimgray-100: #4e4e59;
-  --color-dimgray-200: #6a6a79;
-  --glow: rgba(78, 78, 89, 0.5);
-  --black-drop-shadow: rgba(0, 0, 0, 0.2);
-  --glow-white: #d6d6d6;
-  --gg: #888fff;
-  --color-transparent: #ffffff00;
-  --color-footer: #12131e;
-  --gap-3xs: 10px;
-  --gap-131xl: 150px;
-  --gap-11xl: 30px;
-  --gap-41xl: 60px;
-  --gap-21xl: 40px;
-
-  --padding-3xs: 10px;
-
-  --br-8xs: 5px;
-
-  --font-size-5xl: 1.5rem;
-  --font-size-21xl: 2.5rem;
-  --font-size-17xl: 2.25rem;
-  --font-size-xl: 1.25rem;
-  --font-size-6xl: 1.56rem;
-
-  --button-glow: rgba(133, 132, 135, 0.35);
-  --member-plaque: rgba(18, 19, 30, 0.918);
-  --color-gray-100: rgba(255, 255, 255, 0.75);
-  --gg: #888fff;
-  --glow-dark: #000000;
-  --glow-2: #fff;
-  --color-dimgray-100: #4e4e59;
-  --glow: rgba(78, 78, 89, 0.5);
-  --button: #442077;
-
-  --gap-xl: 1.25rem;
-
-  --padding-11xl: 1.88rem;
-
-  --br-3xs: 10px;
-  --br-31xl: 50px;
-  --br-8xs: 5px;
+body.dark-mode {
+  --fg-color: #4285f4;
+  --bg-color: #252627;
+  --font-color1: black;
+  --font-color2: white;
 }

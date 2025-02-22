@@ -1,12 +1,12 @@
 // ContactUs.js
 import './Contact.css'
 import React from 'react';
-import { socialMedia,socialMediaData} from '../../components/SocialMedia';
+import { faInstagram,faFacebook,faDiscord,faTwitter,faReddit,faAndroid, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
+import { faEnvelope, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 
 function ContactUs() {
+  
 
   return (
     <div className='contact-main'>
@@ -20,20 +20,40 @@ function ContactUs() {
           referrerpolicy="no-referrer-when-downgrade"
         />
         <div className='contact-gps-text'>
-          <h1 className='contact-gps-heading'>HEADQUARTERS <br/> CGC JHANJERI</h1>
+          <h1 className='contact-gps-heading'>CHANDIGARH GROUP OF COLLEGES <br/> JHANJERI CAMPUS</h1>
           <p className='contact-gps-address'>State Highway 12A Jhanjeri, Sahibzada Ajit Singh Nagar, Punjab 140307</p>
-          <div className="contact-us-icons-cgc">
-            {Object.entries(socialMedia).map(([platform, link], index) => {
-              const socialMediaIcon = socialMediaData[platform];
-              return (
-                  <a key={index} href={link} target='_blank' rel="noopener noreferrer" >
-                      <FontAwesomeIcon className="logos" icon={socialMediaIcon} />
-                  </a>
-              );
-            })}
+     <p>Contact Number</p>
+     <p><a href="tel:18002740444" >18002740444</a> (Toll free)</p>
+     <p><a href="tel:+91-01723505300" >+91-01723505300</a> (General Helpline No.)</p>
+     <p><a href="tel:18002740444" >+91-01723505300</a> (Admission Helpline No.)</p>
+     
+       {/* <button className='contact-cgc-web-btn'><a href="https://www.cgc.ac.in/" target='_blank'>CGCJ-Website</a></button> */}
+       <div className="contact-us-icons-cgc">
+  <a href="https://www.instagram.com/cgcjhanjeri/" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon className="contact-us-social-media-icons" icon={faInstagram} />
+  </a>
+  {/* Render Font Awesome icon */}
 
+  <a href="https://www.facebook.com/CollegesJhanjeri" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon className="contact-us-social-media-icons" icon={faFacebook} />
+  </a>
+  {/* Render Font Awesome icon */}
 
-          </div>
+  <a href="https://www.linkedincom/school/cgc-jhanjeri/" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon className="contact-us-social-media-icons" icon={faLinkedin} />
+  </a>
+  {/* Render Font Awesome icon */}
+
+  <a href="https://twitter.com/cgcjhanjeri" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon className="contact-us-social-media-icons" icon={faTwitter} />
+  </a>
+  {/* Render Font Awesome icon */}
+
+  <a href="mailto:info@cgc.ac.in">
+    <FontAwesomeIcon className="contact-us-social-media-icons" icon={faEnvelope} />
+  </a>
+  {/* Render Font Awesome icon */}
+</div>
 
         </div>
       </div>

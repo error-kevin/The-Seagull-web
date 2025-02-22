@@ -5,10 +5,10 @@ import { getRolesFromToken } from "./authUtils";
 const RequireAuth = ({ allowedroles })=>{
     const {auth} = useAuth();
     const location = useLocation();
-    
-    
 
     const roles = getRolesFromToken(auth?.accessToken);
+    console.log(roles)
+    
     return(
         roles?.find(role => allowedroles?.includes(role))
             ? <Outlet/>

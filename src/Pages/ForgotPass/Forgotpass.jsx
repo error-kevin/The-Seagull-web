@@ -1,10 +1,5 @@
 import React from 'react';
 import './Forgotpass.css';
-import discordlogo from '../../assets/icons8/icons8-discord.svg'
-import youtubelogo from '../../assets/icons8/icons8-youtube.svg'
-import githublogo from '../../assets/icons8/icons8-github.svg'
-import twitterlogo from '../../assets/icons8/icons8-twitter.svg'
-import instagramlogo from '../../assets/icons8/icons8-instagram.svg'
 import { useRef,useState,useEffect } from 'react';
 import axios from '../../api/axios';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -32,7 +27,7 @@ const Forgotpass = () => {
     const [validCPwd, setValidCPwd] = useState(false);
     const [cpwdFocus, setCPwdFocus] = useState(false);
     const [errMsg, setErrMsg] = useState('');
-    const [success, setSuccess] = useState(false);
+    // const [success, setSuccess] = useState(false);
     const [otp, setOtp] = useState(["", "", "", ""]);
     const [otpFocus, setOtpFocus] = useState([false, false, false, false]);
     const [combinedOtp, setCombinedOtp] = useState("");
@@ -80,24 +75,24 @@ const Forgotpass = () => {
         setScreen3(false)
         setScreen4(true)
     };
-    const back3 = () => {
-        setScreen1(false)
-        setScreen2(false)
-        setScreen3(true)
-        setScreen4(false)
-    };
-    const back2 = () => {
-    setScreen1(false)
-    setScreen2(true)
-    setScreen3(false)
-    setScreen4(false)
-    };
-    const back1 = () => {
-    setScreen1(true)
-    setScreen2(false)
-    setScreen3(false)
-    setScreen4(false)
-};
+//     const back3 = () => {
+//         setScreen1(false)
+//         setScreen2(false)
+//         setScreen3(true)
+//         setScreen4(false)
+//     };
+//     const back2 = () => {
+//     setScreen1(false)
+//     setScreen2(true)
+//     setScreen3(false)
+//     setScreen4(false)
+//     };
+//     const back1 = () => {
+//     setScreen1(true)
+//     setScreen2(false)
+//     setScreen3(false)
+//     setScreen4(false)
+// };
     
 
 
@@ -131,6 +126,7 @@ const Forgotpass = () => {
     const handleotp = async () => {
         try{
             const response = await axios.get(`/auth/otp/${email}`);
+            console.log(response);
             next1()
         }
         catch(err){
@@ -162,6 +158,7 @@ const Forgotpass = () => {
     const sendotp = async () => {
         try{
             const response = await axios.get(`/auth/otp/verify/${combinedOtp}`);
+            console.log(response);
             next2()
         }
         catch(err){
@@ -203,8 +200,7 @@ const Forgotpass = () => {
                 withCredentials: true
                 }
             );
-            
-            
+            console.log(response);
             next3()
         
             }
@@ -249,13 +245,7 @@ const Forgotpass = () => {
                     <div className="forgotpass-form" id="a-form" >
                         <h2 className="forgotpass-form_title forgotpass-title">Forgot Password?</h2>
                         <span className="forgotpass-form__span1">Our Socials</span>
-                        <div className="forgotpass-form__icons">
-                            <a href='g'><img className="forgotpass-form__icon" src={discordlogo} alt=''/></a>
-                            <a href='g'><img className="forgotpass-form__icon" src={youtubelogo} alt=''/></a>
-                            <a href='g'><img className="forgotpass-form__icon" src={githublogo} alt=''/></a>
-                            <a href='g'><img className="forgotpass-form__icon" src={twitterlogo} alt=''/></a>
-                            <a href='g'><img className="forgotpass-form__icon" src={instagramlogo} alt=''/></a>
-                        </div>
+                        
                         <span className="forgotpass-form__span">Enter your email</span>
                         <span>
                             <input className="forgotpass-form__input" type="text" placeholder="Email" id="email" onChange={(e) => setEmail(e.target.value)} required aria-invalid={validEmail ? "false" : "true"} aria-describedby="emailnote" onFocus={() => setEmailFocus(true)} onBlur={() => setEmailFocus(false)}/>
@@ -286,13 +276,7 @@ const Forgotpass = () => {
                     <h2 className="forgotpass-form_title forgotpass-title">Forgot Password?</h2>
                     <span className="forgotpass-form__span1">Our Socials</span>
                     
-                    <div className="forgotpass-form__icons">
-                        <a href='g'><img className="forgotpass-form__icon" src={discordlogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={youtubelogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={githublogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={twitterlogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={instagramlogo} alt=''/></a>
-                    </div>
+                    
                     <span className="forgotpass-form__span">Enter your OTP</span>
                     <span>
                     <div className="forgotpass-form-otp-input-container">
@@ -339,13 +323,7 @@ const Forgotpass = () => {
                 <div className="forgotpass-form" id="a-form" >
                     <h2 className="forgotpass-form_title forgotpass-title">Forgot Password?</h2>
                     <span className="forgotpass-form__span1">Our Socials</span>
-                    <div className="forgotpass-form__icons">
-                        <a href='g'><img className="forgotpass-form__icon" src={discordlogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={youtubelogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={githublogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={twitterlogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={instagramlogo} alt=''/></a>
-                    </div>
+                    
                     <span className="forgotpass-form__span">Set New Password</span>
                     <span className='forgotpass-form-newpass-input-container'>
                         <span>
@@ -394,13 +372,7 @@ const Forgotpass = () => {
                 <div className="forgotpass-form" id="a-form" >
                     <h2 className="forgotpass-form_title forgotpass-title">Password Has Been Reset</h2>
                     <span className="forgotpass-form__span1">Our Socials</span>
-                    <div className="forgotpass-form__icons">
-                        <a href='g'><img className="forgotpass-form__icon" src={discordlogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={youtubelogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={githublogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={twitterlogo} alt=''/></a>
-                        <a href='g'><img className="forgotpass-form__icon" src={instagramlogo} alt=''/></a>
-                    </div>
+                    
                     
                     <Link to='/signin'><button className="forgotpass-form__button forgotpass-button forgotpass-submit">LOGIN</button></Link>
                 </div>

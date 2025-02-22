@@ -1,10 +1,5 @@
 import './Sign-up.css';
 import {useRef,useState,useEffect,React} from 'react';
-import discordlogo from '../../assets/icons8/icons8-discord.svg'
-import youtubelogo from '../../assets/icons8/icons8-youtube.svg'
-import githublogo from '../../assets/icons8/icons8-github.svg'
-import twitterlogo from '../../assets/icons8/icons8-twitter.svg'
-import instagramlogo from '../../assets/icons8/icons8-instagram.svg'
 import { useNavigate } from 'react-router-dom';
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,7 +10,7 @@ import axios from '../../api/axios';
 
 
 
-const USER_REGEX = /^[A-z][A-z0-9-_]{3,10}$/;
+const USER_REGEX = /^[A-z\s][A-z0-9\s-_]{3,20}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const EMAIL_REGEX = /^[A-z][A-z0-9-_](?=.*[@]).{2,32}$/;
 
@@ -193,18 +188,13 @@ const Signup = () => {
                         <div className="signup-switch__circle signup-switch__circle--t"></div>
                         <h2 className="signup-form_title signup-title">Create Account</h2>
                         
-                        <span className="signup-form__span1">Our Socials</span>
-                        <div className="signup-form__icons">
-                            <a href='g'><img className="signup-form__icon" src={discordlogo} alt=''/></a>
-                            <a href='g'><img className="signup-form__icon" src={youtubelogo} alt=''/></a>
-                            <a href='g'><img className="signup-form__icon" src={githublogo} alt=''/></a>
-                            <a href='g'><img className="signup-form__icon" src={twitterlogo} alt=''/></a>
-                            <a href='g'><img className="signup-form__icon" src={instagramlogo} alt=''/></a>
-                        </div>
+                        
 
 
                         <span className="signup-form__span">Sign up with email</span>
                         
+
+                        <div className='signup-form-input-container'>
                         <span>
                         <input className="signup-form__input" type="text" placeholder="Name" id="username" ref={userRef} autoComplete="off" onChange={(e) => setUser(e.target.value)} value={user} required aria-invalid={validName ? "false" : "true"} aria-describedby="uidnote" onFocus={() => setUserFocus(true)} onBlur={() => setUserFocus(false)}/> 
                         <FontAwesomeIcon icon={faCheck} className={validName ? "valid" : "hide"} />
@@ -221,20 +211,16 @@ const Signup = () => {
                         
                         
                         <span>
-                        <input className="signup-form__input" type="text" placeholder="Email" id="email" onChange={(e) => setEmail(e.target.value)} required aria-invalid={validEmail ? "false" : "true"} aria-describedby="emailnote" onFocus={() => setEmailFocus(true)} onBlur={() => setEmailFocus(false)}/>
-                        <FontAwesomeIcon icon={faCheck} className={validEmail ? "valid" : "hide"} />
-                        <FontAwesomeIcon icon={faTimes} className={validEmail || !email ? "hide" : "invalid"} />
+                            <input className="signup-form__input" type="text" placeholder="Email" id="email" onChange={(e) => setEmail(e.target.value)} required aria-invalid={validEmail ? "false" : "true"} aria-describedby="emailnote" onFocus={() => setEmailFocus(true)} onBlur={() => setEmailFocus(false)}/>
+                            <FontAwesomeIcon icon={faCheck} className={validEmail ? "valid" : "hide"} />
+                            <FontAwesomeIcon icon={faTimes} className={validEmail || !email ? "hide" : "invalid"} />
                         </span>
-                        <p id="emailnote" className={emailFocus && !validEmail ? "instructions" : "offscreen"}>
-                            <FontAwesomeIcon icon={faInfoCircle} />
-                            4 to 24 characters.<br />
-                            Must begin with a letter.<br />
-                            Letters, numbers, underscores, hyphens allowed.
-                        </p>
-                        
-                        
-                        
-                        
+                            <p id="emailnote" className={emailFocus && !validEmail ? "instructions" : "offscreen"}>
+                                <FontAwesomeIcon icon={faInfoCircle} />
+                                4 to 24 characters.<br />
+                                Must begin with a letter.<br />
+                                Letters, numbers, underscores, hyphens allowed.
+                            </p>
                         <span>
                         <input
                         type="password"
@@ -261,15 +247,8 @@ const Signup = () => {
                             
                         </p>
                         
-
-
-
-
-
-
-
                         <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                            
+                        </div>
                         
                         
                         <button className="cssbuttons-io-button" disabled ={!validName || !validPwd || !validEmail ? true : false}> SIGN UP

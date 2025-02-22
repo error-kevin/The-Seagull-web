@@ -8,7 +8,8 @@ const getRolesFromToken = (token) => {
 };
 const getEmailFromToken = (token) => {
   const decodedemail = jwt_decode(token);
+  console.log(decodedemail);
   return decodedemail?.UserInfo?.email || [];
 };
 
-export { getRolesFromToken ,getEmailFromToken};
+export { getRolesFromToken, getEmailFromToken };

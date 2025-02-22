@@ -1,0 +1,1678 @@
+hr{
+    margin: 0px;
+    width: 100%;
+}
+.registration-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+    min-height: calc(100vh - 75px);
+    align-items: center;
+    justify-content: center;
+}
+.registration-main-input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 4px solid var(--fg-color);
+    box-shadow: 0px 1px 18px 5px var(--fg-color);
+    backdrop-filter: blur(8px);
+    margin: 0 20px;
+    width: 100%;
+    height: 100%;
+    min-height: calc(90vh - 75px);
+    border-radius: 20px;
+    font-family: var(--font-family-akira);
+}
+.registration-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    min-height: calc(100vh-75px);
+    margin: 0px;
+}
+.registration-pfp-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.registration-id-image {
+    width: 7rem;
+    align-self: center;
+}
+
+.registration-backbtnout {
+    display: flex;
+
+}
+
+.registration-backbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-align: center;
+}
+
+.registration-inner-regform {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    font-family: var(--font-family-akira);
+}
+.registration-flexbtn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.registration-input {
+    padding: 10px;
+    margin: 4px;
+    /* border-radius: 20px; */
+    width: 20rem;
+    opacity: 1;
+    height: 2.8rem;
+    padding-left:10px;
+    text-align: start;
+    color: rgb(253, 253, 253);
+    background-blend-mode: darken;
+    font-size: medium;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: var(--font-family-space);
+    border: 2px solid var(--fg-color);
+    box-shadow: 2px 2px var(--fg-color);
+    transform: rotate3d(40px 40px);
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+}
+.registration-course{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.registration-course-option {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    color: rgb(250, 250, 250);
+    background-color: var(--fg-color);
+    font-family: var(--font-family-space);
+}
+
+.registration-drop-hr {
+    color: white;
+}
+
+#course {
+    width: 100%;
+    height: 2.8rem;
+    /* border-radius: 20px; */
+    text-align: center;
+    background-color: transparent;
+    font-family: var(--font-family-akira);
+    /* background-image: var(--bg-image); */
+}
+
+option {
+    text-align: start;
+}
+
+.registration-gamingevent {
+    font-size: 22px;
+    font-family: var(--font-family-akira);
+}
+
+.registration-regform {
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-family: var(--font-family-akira);
+}
+
+.registration-regform:hover {
+    text-decoration: underline;
+    
+    transition: all;
+    transition-duration: 1s;
+    font-family: var(--font-family-akira);
+
+}
+
+.registration-submit-btn {
+    display: flex;
+    width: 200px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 2px solid var(--fg-color);
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    background-color: transparent;
+    /* background-image: var(--bg-image); */
+    backdrop-filter: blur(15px);
+    color: var(--color-white);
+    box-shadow: 0.1em 0.1em 0.4em 0.3em var(--fg-color);
+    transition: transform 0.2s;
+    font-family: var(--font-family-akira);
+}
+.registration-logo-image{
+    height: 10vh;
+}
+.registration-form-head{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registration-radio-flexbtn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    
+    width: 100%;
+}
+
+.registration-radio-submit-btn {
+    width: 14rem;
+    border-radius: 18px;
+    height: 7vh;
+    opacity: 1;
+    /* background-color: rgb(22, 32, 150); */
+    border: 2px solid var(--fg-color);
+    color: rgb(253, 253, 253);
+    /* background-image: var(--bg-image); */
+    background-color: transparent;
+    font-size: large;
+    font-weight: bolder;
+    backdrop-filter: blur(15px);
+    color: var(--color-white);
+    box-shadow: 0.1em 0.1em 0.4em 0.3em var(--fg-color);
+    font-family: inherit;
+    transition: transform 0.2s;
+    font-family: var(--font-family-akira);
+}
+
+.registration-submit-btn:hover {
+    transition: all;
+    transition-duration: 0.5s;
+    color: whitte;
+    transform: scale(0.96);
+    box-shadow: 0.1em 0.1em 0.3em 0.4em var(--fg-color);
+}
+.registration-submit-btn:visited {
+    letter-spacing: 2px;
+    transition: all;
+    word-spacing: 2em;
+    transition-duration: 4s;
+    color: whitte;
+    font-family: var(--font-family-akira);
+}
+
+.registration-intro-para {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-family: var(--font-family-akira);
+}
+
+.registration-rules {
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    padding: 0rem 2rem;
+    line-height: 5vh;
+    box-shadow: 1px 1px 10px 2px white;
+    font-family: var(--font-family-akira);
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+
+}
+
+.registration-input::placeholder {
+    color: white;
+    padding-top: 10px;
+    margin: 4px;
+}
+
+.registration-input::placeholder:hover {
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    margin: 4px;
+}
+
+.registration-team-head {
+    color: rgb(242, 237, 237);
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    letter-spacing: 2px;
+    font-family: var(--font-family-akira);
+}
+
+.registration-team-head:hover {
+    text-decoration: underline;
+    transition: all;
+    transition-duration: 1s;
+}
+.registration-input-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.registration-teamname {
+    width: 30em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    opacity: 1;
+    /* margin-top: 2em; */
+    /* margin-bottom: 0em; */
+    font-family: var(--font-family-akira);
+}
+
+.registration-event-radio {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#registration-logo-ace{
+    /* position: relative; */
+}
+.events-ace-sub-heading{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-size: 14px;
+font-weight: 600;
+padding-bottom: 20px;
+flex-wrap: wrap;
+text-align: center;
+}
+.registration-event-select{
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+}
+
+.registration-event-selec-radio-btn {
+    display: flex;
+    margin: auto;
+}
+.registration-event-head {
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: var(--font-family-akira);
+}
+.registration-screen-file {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    
+    color: white;
+    width: 100%;
+    border: 12px;
+    border-color: #042456;
+    box-sizing: content-box;
+    transform: scale(40px 40px);
+}
+.registration-screen-file:hover {
+    transition: all;
+    transition-duration: 0.5s;
+    transform: scale(20px 20px);
+}
+.registration-screen-file>input {
+    width: 20em;
+    height: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    color: bisque;
+}
+
+select>option {
+    font-size: medium;
+    color: var(--fg-color);
+}
+.registration-screen-3 {
+    border: 4px solid var(--fg-color);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 1px 18px 5px var(--fg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap:1rem;
+    width: 70vw;
+    box-shadow: 0px 1px 18px 5px var(--fg-color);
+    border-radius: 20px;
+}
+
+.registration-screen-file>label {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.registration-fileupload>input>button {
+    color: #0d1f3b;
+    background-color: #0d1f3b;
+    border: 8px solid red;
+}
+.registration-photo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d1f3b;
+    border: 1px solid var(--fg-color);
+    padding: 4px;
+    border-radius: 20px;
+    height: 8rem;
+    width: 14rem;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.registration-upload-label {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+.registration-upload-img {
+    height: 5em;
+    width: 5em;
+}
+
+.registration-screen-2-team-form {
+    background-color: transparent;
+    border: 5px solid var(--fg-color);
+    box-shadow: 1px 1px 16px 1px white;
+    border-radius: 20px;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 2rem; */
+    /* padding-bottom: 4rem; */
+    width: 90vw;
+    height: calc(90vh - 75px);
+    
+    /* margin: auto; */
+    backdrop-filter: blur(3px);
+}
+.registration-logo {
+    height: 150px;
+    /* width: 14vw; */
+    object-fit: contain;
+}
+.registration-logo:hover {
+    filter: drop-shadow(0 0 5px white) brightness(150%); /* Adjust the glow effect */
+}
+.registration-radio-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------------->Code for drop down for college and university<------------------------------------------------------------------- */
+
+
+.registration-button {
+    background-color: #4CAF50;
+    color: #212121;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.registration-dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    background-color: #212121;
+    border: 2px solid #4CAF50;
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px var(--fg-color);
+}
+
+.registration-dropdown-content a {
+    color: #4CAF50;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+}
+
+.registration-dropdown-content a:hover {
+    background-color: #4CAF50;
+    color: #212121;
+}
+
+.registration-dropdown-content a:focus {
+    background-color: #212121;
+    color: #4CAF50;
+}
+
+.registration-dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+}
+
+.registration-dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+}
+
+.registration-paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.registration-paste-button:hover .registration-dropdown-content {
+    display: block;
+}
+.registration-form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/* Css for profile image of the players */
+.registration-pfp-image{
+    border-radius: 50%;
+height: 10em;
+width: 10em;
+object-fit: cover;
+}
+.registration-pfpfile{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; 
+gap: 1rem;
+}
+.registration-pfpfile p,.registration-screen-file p{
+    text-align: center;
+}
+@media only screen and (max-width:718px) {
+
+    #course {
+        padding: 0px;
+        /* border-radius: 20px; */
+        height: 24px;
+        color: white;
+        font-size: small;
+        opacity: 1;
+        border: 2px solid var(--fg-color);
+        border: 2px solid var(--fg-color);
+    }
+    .registration-id-image {
+        height: 2rem;
+        align-self: center;
+    }
+    .registration-main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .registration-form {
+        border: 2px solid var(--fg-color);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .registration-inner-regform {
+        display: flex;
+        row-gap: 1vw;
+        column-gap: 1vh;
+        opacity: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        margin-bottom: 10px;
+
+    }
+
+    .flexbtn {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .registration-input {
+        padding: 4px;
+        /* border-radius: 20px; */
+        width: 60vw;
+        height: 2.8rem; 
+        text-align: start;
+        padding-left:10px;
+        color: white;
+        letter-spacing: 2px;
+        font-size: small;
+        opacity: 1;
+        border: 2px solid var(--fg-color);
+        border: 2px solid var(--fg-color);
+    }
+    
+
+    .registration-game {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    .registration-regform {
+        text-align: center;
+        color: white;
+        font-size: 26px;
+    }
+    .registration-regform:hover {
+        text-decoration: underline;
+    }
+
+    .registration-submit-btn {
+        display: flex;
+        width: 11rem;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        background-color: transparent;
+        border: 2px solid var(--fg-color);
+        color: rgb(253, 253, 253);
+        text-align: center;
+        font-weight: bolder;
+        font-size: medium;
+        transform: scale(40px 40px);
+    }
+.registration-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+    .registration-intro-para {
+        color: rgb(160 235 165);
+        font-weight: bolder;
+        font-size: 10px;
+        word-spacing: 2px;
+    }
+    .registration-rules {
+        color: white;
+        font-weight: bolder;
+        margin-top: 4em;
+        font-size: 10px;
+        word-spacing: 2px;
+        padding: 2px;
+    }
+    .registration-rules>h4 {
+        font-size: 14px;
+    }
+    .registration-screen-file>label {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 11px;
+        text-align: center;
+        font-weight: medium;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+    .registration-event-head {
+        font-size: 36px;
+    }
+
+    .registration-screen-3 {
+        border: 4px solid var(--fg-color);
+        box-shadow: 0px 1px 18px 5px var(--fg-color);
+        margin-right: 26px;
+        margin-left: 20px;
+        width: 79vw;
+        margin: auto;
+        margin-bottom: 20px;
+        box-shadow: 0px 1px 18px 5px var(--fg-color);
+        border-radius: 20px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .registration-teamname {
+        margin-top: 1em;
+        margin-bottom: 0em;
+
+    }
+
+    .registration-event-radio {
+        /* margin-top: 3em; */
+        /* margin: auto; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .registration-button {
+        background-color: #4CAF50;
+        color: #212121;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 2px double transparent;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .registration-dropdown-content {
+        display: none;
+        font-size: 13px;
+        position: absolute;
+        z-index: 1;
+        min-width: 200px;
+        background-color: #212121;
+        border: 2px solid #4CAF50;
+        border-radius: 0px 15px 15px 15px;
+        box-shadow: 0px 8px 16px 0px var(--fg-color);
+    }
+
+    .registration-dropdown-content a {
+        color: #4CAF50;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: block;
+        transition: 0.1s;
+    }
+
+    .registration-dropdown-content a:hover {
+        background-color: #4CAF50;
+        color: #212121;
+    }
+
+    .registration-dropdown-content a:focus {
+        background-color: #212121;
+        color: #4CAF50;
+    }
+
+    .dropdown-content #top:hover {
+        border-radius: 0px 13px 0px 0px;
+    }
+
+    .registration-dropdown-content #bottom:hover {
+        border-radius: 0px 0px 13px 13px;
+    }
+
+    .registration-paste-button:hover button {
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .registration-paste-button:hover .dropdown-content {
+        display: block;
+    }
+
+    .registration-screen-2-team-form {
+        background-color: transparent;
+        border: 5px solid var(--fg-color);
+        box-shadow: 1px 1px 16px 1px var(--fg-color);
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+        width: 80vw;
+        margin: auto;
+        backdrop-filter: blur(3px);
+    }
+
+    .registration-logo {
+        height: 12vh;
+        width: 18vw;
+    }
+    .registration-radio-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #course{
+        height: 2.8rem;
+    }
+    .main-container{
+        gap: 0px;
+    }
+}
+@media only screen and (min-width:719px) and (max-width:1400px) {
+    .id-image {
+        width: 6rem;
+        align-self: center;
+        margin-top: 3rem;
+    }
+
+    .form {
+        border: 2px solid var(--fg-color);
+        margin-right: 26px;
+        margin-left: 20px;
+        background-size: 80vh 80vw;
+        background-repeat: no-repeat;
+        height: 70vh;
+        opacity: 1;
+    }
+
+    .screen-3 {
+        border: 4px solid var(--fg-color);
+        margin-right: 26px;
+        margin-left: 20px;
+        width: 72vw;
+        margin: auto;
+        margin-bottom: 20px;
+        box-shadow: 0px 1px 18px 5px var(--fg-color);
+        border-radius: 20px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .registration-inner-regform {
+        /* flex-direction: column;
+        justify-content: center; */
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        opacity: 1;
+
+    }
+
+    #course {
+        padding: 4px;
+        /* border-radius: 20px; */
+        height: 2.8rem;
+        text-align: center;
+        color: white;
+        letter-spacing: 2px;
+        font-size: small;
+        border: 2px solid var(--fg-color);
+        box-shadow: 2px 2px var(--fg-color);
+        border: 2px solid var(--fg-color);
+    }
+
+    .registration-input {
+        padding: 4px;
+        /* border-radius: 20px; */
+        width: 24vw;
+        height: 2.8rem;
+        text-align: start;
+        padding-left:10px;
+        color: white;
+        font-size: small;
+        letter-spacing: 3px;
+        opacity: 1;
+        border: 2px solid var(--fg-color);
+        box-shadow: 2px 2px var(--fg-color);
+        background-color: 2px solid var(--fg-color);
+    }
+.registration-teamname{
+    width: 30em;
+}
+   
+    .game {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    .game:hover {
+        text-decoration: underline;
+        letter-spacing: 2px;
+        transition: all;
+        transition-duration: 0.6s;
+    }
+    .registration-regform {
+        text-align: center;
+        color: white;
+        font-size: 26px;
+    }
+    .registration-regform:hover {
+        text-decoration: underline;
+        letter-spacing: 2px;
+        transition: all;
+        transition-duration: 0.6s;
+    }
+
+    .registration-submit-btn {
+        display: flex;
+        width: 12rem;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        background-color: transparent;
+        border: 2px solid var(--fg-color);
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+        font-size: large;
+        transform: scale(40px 40px);
+
+    }
+    .registration-submit-btn:hover {
+        letter-spacing: 2px;
+        transition: all;
+        transition-duration: 0.6s;
+        color: whitte;
+    }
+    .registration-intro-para {
+        color: white;
+        font-weight: bolder;
+        font-size: 10px;
+        word-spacing: 2px;
+    }
+    .registration-rules {
+        color: white;
+        font-weight: bolder;
+        font-size: 10px;
+        word-spacing: 2px;
+        padding: 2px;
+
+    }
+
+    .registration-rules>h4 {
+        font-size: 14px;
+    }
+
+    .registration-rules>ol>li {
+        line-height: 20px;
+    }
+
+    .teamname {
+        margin-top: 1px;
+        margin-bottom: 0px;
+    }
+
+    .event-radio {
+        display: flex;
+        gap: 11vw;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    .screen3file>label {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 3rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 11px;
+        text-align: center;
+        font-weight: medium;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .registration-screen-file {
+        gap: 2em;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #course{
+        height: 2.8rem;
+    }
+
+}
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+.players-upload-button {
+    color: white;
+    background-color: #10B981;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+}
+
+.players-upload-button:hover {
+    background-color: #059669;
+}
+
+.players-upload-button:focus {
+    box-shadow: var(--fg-color) 0 0 0 calc(4px + var(--fg-color)) var(--fg-color);
+}
+
+.players-upload-button svg {
+    display: inline;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.75rem;
+    color: white;
+    animation: bounce 1s infinite;
+}
+
+@media screen and (min-width:200px) and (max-width:600px) {
+    .registration-flexbtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .registration-screen-file {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .registration-radio-flexbtn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .registration-radio-submit-btn{
+        width: 50vw;
+        height: 4.5vh;
+    }
+    .registration-input{
+        opacity: 1
+        ;
+
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   */
+/* summary css */
+.main-summary-box {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    margin-bottom: 10em;
+}
+
+.summary-member {
+    font-size: 13px;
+    background-color: transparent;
+    border: 1px solid var(--fg-color);
+    box-shadow: 1px 1px 20px 2px var(--fg-color);
+    border-radius: 3em;
+    justify-content: center;
+    width: 40em;
+    height: 9em;
+    padding: 2em;
+    backdrop-filter: blur(6px);
+}
+.summary-share{
+    border: 1px solid var(--fg-color);
+    box-shadow: 1px 1px 20px 2px var(--fg-color);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 3em;
+}
+.summary-member button {
+    margin-left: 28em;
+    margin-bottom: 23em;
+    background-color: transparent;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.summary-contact-details {
+    font-size: 13px;
+    border: 2px solid var(--fg-color);
+    box-shadow: 1px 1px 20px 2px var(--fg-color);
+    border-radius: 3em;
+    text-align: start;
+    opacity: 1;
+    backdrop-filter: blur(6px);
+    margin-top: 1em;
+    width: 40em;
+    padding-bottom: 1.6em;
+    padding: 1em;
+}
+
+.summary-input1 {
+    color: white;
+    display: flex;
+    gap: 7em;
+    border: none;
+    margin: auto;
+    margin-top: 2em;
+}
+.summary-input2 {
+    color: white;
+    margin-top: 2em;
+    gap: 7.2em;
+    display: flex;
+}
+
+.summary-input2-btn {
+    justify-content: end;
+}
+
+.summary-input2-btn button {
+    height: 3em;
+    width: 14em;
+    border-radius: 4em;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    background-image: var(--bg-image);
+    backdrop-filter: blur(15px);
+    color: var(--color-white);
+    box-shadow: 0.1em 0.1em 0.4em 0.3em var(--fg-color);
+    font-family: inherit;
+}
+
+.summary-content input {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    margin: 4px;
+    
+    border-radius: 20px;
+    width: 10rem;
+    height: 1.8rem;
+    padding-left:10px;
+    text-align: start;
+    color: rgb(253, 253, 253);
+    background-blend-mode: darken;
+    font-size: medium;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    opacity: 1;
+    font-family: var(--font-family-akira);
+    border: 1px solid rgb(66, 61, 61);
+    box-shadow: 2px 2px var(--fg-color);
+    border-color: 2px solid var(--fg-color);
+    transform: rotate3d(40px 40px);
+    background-color: var(--fg-color);
+    box-shadow: 0.2px 1.4px 5px 1px var(--fg-color); 
+    background-image: var(--bg-image);
+    backdrop-filter: blur(15px);
+}
+
+.promo{
+    font-size: 13px;
+    background-color: transparent;
+    margin-top: 2em;
+    width: 40em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 0.2em;
+    border: 8px solid var(--fg-color);
+    box-shadow: 1px 1px 20px 2px var(--fg-color);
+    border-radius: 3em;
+    backdrop-filter: blur(6px);
+}
+
+.promo-content {
+    display: flex;
+    gap: 6em;
+    margin-left: 15px;
+    margin-top: 3em;
+}
+
+.promo input {
+    margin-top: 5 em;
+    background-color: transparent;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 20px;
+    width: 10rem;
+    height: 1.8rem;
+    padding-left:10px;
+    text-align: start;
+    color: rgb(253, 253, 253);
+    background-blend-mode: darken;
+    font-size: medium;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    opacity: 1;
+    font-family: var(--font-family-akira);
+    border: 2px solid rgb(66, 61, 61);
+    box-shadow: 2px 2px var(--fg-color);
+    border-color: 2px solid var(--fg-color);
+    transform: rotate3d(40px 40px);
+    background-color: var(--fg-color);
+    box-shadow: 0.2px 1.4px 5px 1px var(--fg-color);
+    background-image: var(--bg-image);
+    backdrop-filter: blur(15px);
+}
+
+.promo button {
+    float: right;
+    background-image: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    margin-right: 1.5em;
+    height: 3em;
+    width: 14em;
+    border: none;
+    border-radius: 4em;
+    cursor: pointer;
+    background-image: var(--bg-image);
+    backdrop-filter: blur(15px);
+    color: var(--color-white);
+    box-shadow: 0.1em 0.1em 0.4em 0.3em var(--fg-color);
+    font-family: inherit;
+}
+.summary-booking {
+    font-size: 8px;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+    width: 32em;
+    justify-content: flex-end;
+    padding: 0.5em;
+    border: 2px solid var(--fg-color);
+    box-shadow: 1px 1px 20px 2px var(--fg-color);
+    border-radius: 3em;
+}
+.summary-booking-city {
+    gap: 12em;
+}
+.summary-booking-date {
+    display: flex;
+    gap: 14em;
+}
+.summary-booking-tickets {
+    display: flex;
+    gap: 8em;
+    border-bottom: solid white;
+}
+
+.summary-booking-combo {
+    margin-top: 1em;
+    display: flex;
+    gap: 16em;
+}
+
+.summary-booking-price {
+    margin-top: 1em;
+    display: flex;
+    gap: 20em;
+}
+
+.summary-booking-vat {
+    display: flex;
+    gap: 23em;
+}
+
+.summary-booking-amount {
+    display: flex;
+    gap: 13em;
+}
+
+.summary-booking-btn button {
+    margin-left: 5em;
+    margin-top: 1em;
+    background-image: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    height: 3em;
+    width: 9em;
+    border-radius: 5em;
+    background-image: var(--bg-image);
+    backdrop-filter: blur(15px);
+    color: var(--color-white);
+    box-shadow: 0.1em 0.1em 0.4em 0.3em var(--fg-color);
+    font-family: inherit;
+}
+
+.summary-contact-heading {
+    font-size: 22px;
+    text-align: left;
+}
+
+.summary-promo-heading {
+    font-size: 22px;
+    text-align: center;
+}
+
+.summary-booking-heading {
+    text-align: center;
+    font-size: 22px;
+}
+
+@media screen and (max-width:900px) {
+    .main-summary-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary-booking {
+        width: 56vw;
+    }
+    .summary-booking-venus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary-member-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        text-align: center;
+    }
+    .summary-member {
+        text-align: center;
+    }
+    .summary-contact-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .summary-promo-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:540px) and (max-width:600px) {
+    .summary-member {
+        width: 80vw;
+        height: auto;
+        text-align: center;
+    }
+    .summary-contact-details {
+        width: 36em;
+        height: 15em;
+    }
+    .promo {
+        width: 36em;
+        height: 9em;
+    }
+    .summary-member-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font: small;
+    }
+    .summary-contact-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+    .summary-promo-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:300px) and (max-width:540px) {
+    .summary-main-member {}
+
+    .summary-member {
+        width: 80vw;
+        height: auto;
+        text-align: center;
+    }
+
+    .summary-contact-details {
+        width: 32em;
+        height: 15em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .promo {
+        width: 80vw;
+        height: auto;
+    }
+
+    .promo-content {
+        flex-direction: column;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .promo input {
+        width: 55vw;
+        opacity: 1;
+        height: auto;
+    }
+
+    .promo button {
+        width: 55vw;
+        margin: auto;
+    }
+
+    .summary-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .summary-input1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .summary-input1 {
+        color: white;
+        display: flex;
+        gap: 1em;
+        border: none;
+        margin: auto;
+    }
+
+    .summary-input2 {
+        color: white;
+        margin-top: 2em;
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    .summary-contact-details {
+        width: 80vw;
+        height: auto;
+    }
+
+    .summary-content input {
+        width: 55vw;
+        height: auto;
+        letter-spacing: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        word-spacing: -2px;
+        opacity: 1;
+    }
+
+    .summary-input2-btn button {
+        width: 55vw;
+    }
+
+    .summary-main-member {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary-booking {
+        width: 65vw;
+    }
+
+    .summary-contact-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .summary-promo-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+
+}
+.home-icon-loading{
+    width: calc(100% - 0.6em);;
+}
+/* Add a transition effect for the .summary-content class */
+/* Add a transition effect for the .summary-content class */
+/* .summary-content { */
+    /* display: none; */
+    /* opacity: 0; */
+    /* transition: opacity 1s ease-out; Smooth transition for opacity */
+  /* } */
+  
+  /* Apply the transition only to the opacity property when the .show class is added */
+  /* .summary-content.show { */
+    /* display: block; */
+    /* opacity: 1; */
+  /* } */
+  
+  /* Define a unique animation for the dropdown */
+  /* @keyframes slideIn { */
+    /* 0% { */
+      /* transform: translateY(-10px) scale(0.1); Initial position and scale */
+    /* } */
+    /* 100% { */
+      /* transform: translateY(0) scale(1); Final position and scale */
+    /* } */
+  /* } */
+  
+  /* Apply the animation to the .summary-content when it's displayed */
+  /* .summary-content.show { */
+    /* display: block; */
+    /* animation: slideIn 0.8s cubic-bezier(0.845, 0.845, 0.355, 1); Cubic Bezier for smoother motion */
+  /* } */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with 0 opacity */
+    }
+    100% {
+      opacity: 1; /* End with full opacity */
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1; /* Start with full opacity */
+    }
+    100% {
+      opacity: 0; /* End with 0 opacity */
+    }
+  }
+  
+  .summary-content {
+    display: none;
+    opacity: 0; /* Initially hide with 0 opacity */
+    transition: opacity 1s ease; /* Smooth transition for opacity */
+  }
+  
+  .summary-content.show {
+    display: block;
+    animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation when shown */
+  }
+  
+  .summary-content.hide {
+    animation: fadeOut 2s ease forwards; /* Apply fade-out animation when hidden */
+  }
+  
+  
+
+  .loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+  }
+  
+  .jimu-primary-loading:before,
+  .jimu-primary-loading:after {
+    position: absolute;
+    top: 0;
+    content: '';
+  }
+  
+  .jimu-primary-loading:before {
+    left: -19.992px;
+  }
+  
+  .jimu-primary-loading:after {
+    left: 19.992px;
+    -webkit-animation-delay: 0.32s !important;
+    animation-delay: 0.32s !important;
+  }
+  
+  .jimu-primary-loading:before,
+  .jimu-primary-loading:after,
+  .jimu-primary-loading {
+    background: #000000;
+    -webkit-animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+    animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+    width: 13.6px;
+    height: 32px;
+  }
+  
+  .jimu-primary-loading {
+    text-indent: -9999em;
+    /* margin: auto; */
+    position: absolute;
+    right: calc(50% - 6.8px);
+    top: 10px;
+    /* top: calc(50% - 16px); */
+    -webkit-animation-delay: 0.16s !important;
+    animation-delay: 0.16s !important;
+  }
+  @media (max-width: 999px){
+    .jimu-primary-loading {
+        top: 8px;
+      }
+  }
+  @-webkit-keyframes loading-keys-app-loading {
+  
+    0%,
+    80%,
+    100% {
+      opacity: .75;
+      box-shadow: 0 0 var(--fg-color);
+      height: 26px;
+    }
+  
+    40% {
+      opacity: 1;
+      box-shadow: 0 -8px var(--fg-color);
+      height: 32px;
+    }
+  }
+  
+  @keyframes loading-keys-app-loading {
+  
+    0%,
+    80%,
+    100% {
+      opacity: .75;
+      box-shadow: 0 0 var(--fg-color);
+      height: 26px;
+    }
+  
+    40% {
+      opacity: 1;
+      box-shadow: 0 -8px var(--fg-color);
+      height: 32px;
+    }
+  }

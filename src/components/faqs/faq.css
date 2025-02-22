@@ -1,0 +1,78 @@
+.faq-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  overflow: scroll;
+  max-height: 65vh;
+  padding: 1rem 2rem;
+}
+
+.faq-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------- */
+.app-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: transparent;
+}
+
+.content-wrapper {
+  /* margin-top: 20vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-button {
+  display: flex;
+  width: min-content;
+  border-radius: 9999px;
+  background-color: #d97706;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+.content-box-container {
+  display: flex;
+  /* background-color: red; */
+  width: 100%;
+
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.content-box {
+  display: flex;
+  border: 2px solid var(--bg-color);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  gap: 2rem;
+  width: 100%;
+  /* background-color: #3b82f6; */
+  border-radius: 15px;
+}
+
+.content-title {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.expandable-content {
+  overflow: hidden;
+  font-weight: 500;
+  font-family: var(--font-family-montserrat);
+}

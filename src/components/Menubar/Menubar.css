@@ -1,18 +1,18 @@
-.menu-main {
-  display: flex;
-  /* justify-content: center; */
-  /* text-align: center; */
-  /* background-color: var(--color-footer); */
-  font-family: var(--font-family-montserrat);
-  /* gap: 1rem; */
-  border-radius: 25px;
-  margin: 0;
+.menu-main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* background-color: var(--color-footer); */
+    border-radius: 25px;
+    font-family: var(--font-family-akira);
+    flex-wrap: wrap;
 }
-.menu-core {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--font-family-montserrat);
-  font-weight: 600;
+.menu-core{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family-akira);
+    font-weight: 600;
+
 }

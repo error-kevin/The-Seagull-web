@@ -2,76 +2,35 @@
 
 .signin-main {
   display: flex;
+  padding: 1rem;
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+h2{
+  font-family: var(--font-family-akira);
+}
+
+.signin-main-core {
+  display: flex;
   flex-direction: column;
-  height: 95vh;
   justify-content: center;
   align-items: center;
 
-}
 
-
-.signin-main-core {
-  position: relative;
-
-
-  width: 1000px;
-  min-width: 1000px;
-  min-height: 600px;
-  height: 600px;
-  padding: 25px;
+  width: fit-content;
+  min-height: 500px;
+  height: 100%;
+  padding: 1rem;
   background-color:transparent;
   backdrop-filter: blur(10px);
-  box-shadow: 0px 0px 20px 0px rgb(0,0,0);
+  box-shadow: 0px 0px 20px 0px var(--fg-color);
   border-radius: 12px;
   overflow: hidden;
-}
-
-@media (max-width: 1200px) {
-  .signin-main-core {
-    transform: scale(0.7);
-  }
-}
-
-@media (max-width: 1000px) {
-  .signin-main-core {
-    transform: scale(0.6);
-  }
-}
-
-@media (max-width: 800px) {
-  .signin-main-core {
-    transform: scale(0.5);
-  }
-}
-
-@media (max-width: 600px) {
-  .signin-main-core {
-    transform: scale(0.4);
-  }
-}
-
-@media (max-width: 440px) {
-  .signin-main-core {
-    transform: scale(0.3);
-  }
-}
-
-@media (max-width: 350px) {
-  .signin-main-core {
-    transform: scale(0.28);
-  }
-}
-
-@media (max-width: 330px) {
-  .signin-main-core {
-    transform: scale(0.25);
-  }
-}
-
-@media (max-width: 300px) {
-  .signin-main-core {
-    transform: scale(0.20);
-  }
+  
 }
 
 
@@ -79,11 +38,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  width: 600px;
+  flex-direction: column;  
+  width: 100%;
   height: 100%;
-  padding: 25px;
   background-color:transparent;
   backdrop-filter: blur(10px);
   transition: 1.25s;
@@ -111,11 +68,12 @@
 }
 .signin-form {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  gap: 2rem;
 
 }
 
@@ -135,7 +93,7 @@
 }
 
 .signin-form__input {
-  width: 350px;
+  width: 300px;
   height: 40px;
   margin: 4px 0;
   padding-left: 25px;
@@ -143,13 +101,13 @@
   letter-spacing: 0.15px;
   border: none;
   outline: none;
-  font-family: var(--font-family-montserrat);
+  font-family: var(--font-family-space);
   background-color:transparent;
   backdrop-filter: blur(10px);
   transition: 0.25s ease;
-  color: black;
+  color: var(--color-white);
   border-radius: 8px;
-  box-shadow: 0px 0px 5px 1px rgb(0,0,0);
+  box-shadow: 0px 0px 5px 1px var(--fg-color);
 }
 
 .signin-form__input:focus {
@@ -160,30 +118,29 @@
   text-decoration: underline;
   margin-top: 10px;
   margin-bottom: 0px;
-  font-family: var(--font-family-montserrat);
-  color: black;
+  font-family: var(--font-family-akira);
+  color: var(--color-white);
 }
 .signin-form__span1 {
   text-decoration: underline;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: var(--font-family-montserrat);
-  color: black;
+  font-family: var(--font-family-akira);
+  color: var(--color-white);
 }
 
 .signin-form__link {
-  color: black;
+  color: var(--color-white);
   font-size: 15px;
-  font-family: var(--font-family-montserrat);
-  margin-top: 25px;
+  font-family: var(--font-family-space);
   border-bottom: 1px solid var(--glow-2);
   line-height: 2;
   cursor: pointer;
 }
 .signin-form__login{
-  color: black;
+  color: var(--color-white);
   font-size: 15px;
-  font-family: var(--font-family-montserrat);
+  font-family: var(--font-family-akira);
   margin-top: 15px;
   margin-bottom: 5px;
   line-height: 2;
@@ -193,9 +150,9 @@
   display: none;
 }
 .errmsg{
-  color: black;
+  color: var(--color-white);
   font-size: 12px;
-  font-family: var(--font-family-montserrat);
+  font-family: var(--font-family-akira);
   text-align: center;
   max-width: 400px;
   
@@ -212,14 +169,13 @@
 .signin-title {
   font-size: 34px;
   font-weight: 700;
-  font-family: var(--font-family-montserrat);
-  line-height: 3;
-  color: black;
+  font-family: var(--font-family-akira);
+  color: var(--color-white);
 }
 
 .signin-description {
   font-size: 14px;
-  font-family: var(--font-family-montserrat);
+  font-family: var(--font-family-akira);
   letter-spacing: 0.25px;
   text-align: center;
   line-height: 1.6;
@@ -251,7 +207,7 @@
   background-color:transparent;
   backdrop-filter: blur(10px);
   overflow: hidden;
-  box-shadow:0px 0px 20px 0px rgb(0,0,0);
+  box-shadow:0px 0px 20px 0px var(--fg-color);
   
 }
 
@@ -289,7 +245,7 @@
 
 .signin-switch__button {
   cursor: pointer;
-  box-shadow:0px 0px 20px 0px rgb(0,0,0);
+  box-shadow:0px 0px 20px 0px var(--fg-color);
 }
 
 .signin-switch__button:hover {
@@ -306,7 +262,7 @@
 }
 
 .signin-switch__description {
-  color: black;
+  color: var(--color-white);
 }
 
 .signin-button {
@@ -316,11 +272,12 @@
   margin-top: 30px;
   font-weight: 700;
   font-size: 18px;
-  font-family: var(--font-family-montserrat);
+  font-family: var(--font-family-akira);
   letter-spacing: 1.15px;
-  background-image: var(--bg-image);
-  color: black;
-  box-shadow:0px 0px 20px 0px rgb(0,0,0);
+  /* background-image: var(--bg-image); */
+  background-color: var(--fg-color);
+  color: var(--color-white);
+  box-shadow:0px 0px 20px 0px var(--fg-color);
   border: none;
   outline: none;
 }
@@ -359,8 +316,8 @@
   height: 8px;
   opacity: 0;
   transform: rotate(45deg) scale(0);
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border-right: 2px solid var(--color-white);
+  border-bottom: 2px solid var(--color-white);
   transition: all 0.3s ease;
   transition-delay: 0.15s;
 }
@@ -424,18 +381,18 @@ to {
 display: none!important;
 }
 .cssbuttons-io-button {
-  background-image: var(--bg-image);
-  color: black;
+  /* background-image: var(--bg-image); */
+  background-color: var(--fg-color);
+  color: var(--color-white);
   font-family: inherit;
   padding: 0.35em;
-  margin-top: 30px;
   padding-left: 1.2em;
   font-weight: 700;
   font-size: 16px;
-  font-family: var(--font-family-montserrat);
+  font-family: var(--font-family-akira);
   border-radius: 25px;
   border: none;
-  box-shadow:0px 0px 10px 0px rgb(0,0,0);
+  box-shadow:0px 0px 10px 0px var(--fg-color);
   display: flex;
   align-items: center;
   
@@ -446,7 +403,7 @@ display: none!important;
 }
 
 .cssbuttons-io-button .icon {
-  background: black;
+  background: var(--color-white);
   margin-left: 1em;
   position: absolute;
   display: flex;

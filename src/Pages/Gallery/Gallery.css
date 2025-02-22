@@ -1,0 +1,178 @@
+.gallery-heading-text{
+  font-family: var(--font-family-montserrat);
+  text-align: center;
+}
+.gallery-cgc-logo{
+  height: 80px;
+  backdrop-filter: blur(5px);
+}
+.gallery-cec-logo{
+  height: 180px;
+  backdrop-filter: blur(5px);
+  
+}
+.gallery-header-center-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+.gallery-naac-logo{
+  height: 60px;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+.gallery-header-container{
+  display: flex;
+  padding: 0rem 0rem 0rem 0rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: -1;
+  width: 100%;
+}
+.gallery-main{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 1rem;
+  padding: 2rem;
+  padding-top: 0rem;
+  z-index: 0;
+  
+}
+
+.gallery-text-box{
+  width: 100%;
+  padding: 0rem 2rem;
+  padding-bottom: 1rem;
+  
+}
+.gallery-gallery-text{
+  text-align: center;
+  font-family: var(--font-family-montserrat);
+}
+.gallery-gallery-heading{
+  text-align: center;
+  font-family: var(--font-family-montserrat);
+}
+
+.gallery-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.gallery-core{
+  box-shadow: 2px 2px 14px 4px white;
+  backdrop-filter: blur(12px);
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* z-index: -1; */
+
+}
+
+
+
+
+.gallery-gallery-slideshow {
+  height: 100%;
+  width: 100%;
+}
+
+
+.gallery-Carousel{
+padding: 1rem;
+
+}
+.gallery-card {
+box-shadow: 0 4px 8px 0 var(--black-drop-shadow);
+width: 100%;
+height:80vh;
+align-self: center;
+align-items: center;
+justify-self: center;
+justify-content: center;
+text-align: center;
+font-family: arial;
+}
+
+.gallery-product-image {
+  align-self: center;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  justify-content: center;
+  align-self: center;
+  object-fit: cover;
+}
+
+
+
+
+@media(max-width:750px){
+  .gallery-gallery-text{
+    font-size: 15px;
+  }
+  .gallery-cgc-logo{
+    height: 4vh;
+  }
+  .gallery-cec-logo{
+    height: 10vh;
+  }
+  .gallery-naac-logo{
+    height: 4vh;
+  }
+}
+@media(max-width:400px){
+  .gallery-gallery-text{
+    font-size: 15px;
+  }
+  .gallery-header-container{
+    /* flex-direction: column; */
+justify-content: center;
+gap: 20px;
+  }
+  .gallery-cgc-logo{
+    height: 5vh;
+  }
+  .gallery-cec-logo{
+    height: 10vh;
+  }
+  .gallery-naac-logo{
+    height: 4vh;
+  }
+}
+@media(max-width:300px){
+  .gallery-gallery-text{
+    font-size: 15px;
+  }
+  .gallery-header-container{
+    /* flex-direction: column; */
+justify-content: center;
+gap: 5px;
+  }
+  .gallery-cgc-logo{
+    height: 5vh;
+  }
+  .gallery-cec-logo{
+    height: 10vh;
+  }
+  .gallery-naac-logo{
+    height: 3.5vh;
+  }
+}
+
+

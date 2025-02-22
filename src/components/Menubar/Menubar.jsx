@@ -7,7 +7,7 @@ const Menubar = () => {
 return (
     <div className='menu-main'>
         <div className='menu-core'>
-            <Menu/>
+            <Menu className='menu-gap'/>
         </div>
 
     </div>

@@ -1,29 +1,46 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Home,
+  Devs,
+  PersistLogin,
+  Sponsors,
+  Socket,
+  Gallery,
+  Privacy,
+  Members,
+  Events,
+  Schedule,
+  Contact,
   Signin,
+  Signup,
+  Registration,
+  Dashboard,
   Unauthorised,
   Pagenotfound,
-  Products,
-  Team,
-  About,
-  Signup,
-  Contact,
+  Profile,
+  ForgotPass,
+  HonourGuide,
+  Event_Page,
 } from "./Pages";
+
+import { Faq } from "./components";
 import Layout from "./components/Layout";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import axios from "./api/axios";
 import RequireAuth from "./hooks/RequireAuth";
-import PersistLogin from "./Pages/Sign-in/PersistLogin";
+import axios from "./api/axios";
+import useAuth from "./hooks/useAuth";
 
-export const ROLES = {
-  User: 10,
-  Admin: 10000,
-  Editor: 5000,
-};
+export const ROLES = ["User", "Admin", "Developer", "Owner"];
+export const targetDate = new Date("2024-10-09T12:00:00").getTime();
 
 const App = () => {
+  const { auth } = useAuth();
+
+  useEffect(() => {
+    console.log(auth);
+  }, [auth]);
+
   const backendconnect = async () => {
     try {
       const response = await axios.get("/connect", {
@@ -41,24 +58,46 @@ const App = () => {
     }
   };
 
-  // backendconnect();
+  backendconnect();
 
   return (
     <>
       <Routes>
         <Route className="Layout" path="/" element={<Layout />}>
-          <Route path="/signin" element={<Signin />} />
+          {/* Public routes */}
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="/unauthorised" element={<Unauthorised />} />
           <Route path="/pagenotfound" element={<Pagenotfound />} />
-          <Route path="/members" element={<Team />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/registration" element={<Registration />} />
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+
+          <Route path="/members" element={<Members />} />
+          <Route path="/HonouraryGuidance" element={<HonourGuide />} />
+          <Route path="/h" element={<HonourGuide />} />
+          <Route path="/devs" element={<Devs />} />
+          <Route path="/schedule" element={<Schedule />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/Events" element={<Events />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/quiz/gdgoc-orientation" element={<Socket />} />
+          <Route path="/s" element={<Socket />} />
+
+          {/* Dynamic event route */}
+          <Route path="/Events/:eventName" element={<Event_Page />} />
+
           <Route element={<PersistLogin />}>
-            <Route element={<RequireAuth allowedroles={[ROLES.User]} />}>
-              <Route path="/signup" element={<Signup />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/forgotpass" element={<ForgotPass />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route element={<RequireAuth allowedroles={["Admin"]} />}>
+              <Route path="/register" element={<Signup />} />
+            </Route>
+            <Route element={<RequireAuth allowedroles={["User"]} />}>
+              <Route path="/dashboard" element={<Dashboard />} />
             </Route>
           </Route>
 
