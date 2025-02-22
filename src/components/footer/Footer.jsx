@@ -4,7 +4,7 @@ import { Menu } from "../Menu/Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import inditech from "../../assets/Core/gdglogo.png";
+import inditech from "../../assets/Core/logo.png";
 import { Social } from "../Social/Social";
 import axios from "../../api/axios";
 
@@ -45,7 +45,7 @@ const Footer = () => {
     <div className="footer-main">
       <div className="footer-header-container">
         <hr className="footer-hr" />
-        <h1 className="footer-head-large">Where Curiosity Meets Code.</h1>
+        {/* <h1 className="footer-head-large">Where Curiosity Meets Code.</h1> */}
         <hr className="footer-hr" />
         {/* <p className='footer-para'>Take action today and join us for an event experience like no other.</p> */}
       </div>
@@ -139,7 +139,7 @@ const Footer = () => {
         <div className="footer-bottom-text">
           <a href="/privacy">
             <h3 className="footer-copyright-para">
-              All Rights Reserved By GDGOC - SVVV
+              All Rights Reserved By The Seagull Store
             </h3>
           </a>
           |
@@ -148,11 +148,6 @@ const Footer = () => {
               Developed By{" "}
               <img className="footer-inditech-logo" src={inditech} alt="" />
             </h3>
-          </Link>
-        </div>
-        <div className="footer-signin-logo-container">
-          <Link to="/signin">
-            <FontAwesomeIcon className="footersignin" icon={faEnvelope} />
           </Link>
         </div>
       </div>
