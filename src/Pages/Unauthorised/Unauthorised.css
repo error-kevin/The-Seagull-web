@@ -1,0 +1,42 @@
+.unauthorised-main{
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.unauthorised-core{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.unauthorised-img{
+    width:max-content;
+    height: max-content;
+    border-radius: 3rem;
+}
+
+.unauthorised-goback-button:hover{
+    text-shadow: 0px 0px 10px var(--glow-2);
+}
+.unauthorised-goback-button:active, .unauthorised-goback-button:focus {
+  box-shadow: 2px 2px 6px var(--glow), -2px -2px 6px var(--glow);
+  transform: scale(0.97);
+  transition: 0.25s;
+}
+.unauthorised-goback-button {
+    border-radius: 5px;
+    margin:15px;
+    background-color: var(--color-transparent);
+    font-family: var(--font-family-montserrat);
+    border-color: var(--color-white);
+    border-style: solid;
+    width: 190px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    height: 50px;
+    color: var(--color-white)
+}

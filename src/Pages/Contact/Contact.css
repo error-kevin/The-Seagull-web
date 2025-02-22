@@ -1,0 +1,122 @@
+.contact-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+
+}
+
+.contact-heading{
+    text-align: center;
+    font-family: var(--font-family-montserrat);
+}
+.contact-cgc-web-btn{
+     
+        display: flex;
+        width: 20vw;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        opacity: 1;
+        border: 2px solid black;
+        color: rgb(253, 253, 253);
+        margin: auto;
+        margin-top: 30px;
+        padding-left: 20px;
+        margin-bottom: 4em;
+        text-align: start;
+        font-weight: bolder;
+        font-size: large;
+        transform: scale(40px 40px);
+        background-image: var(--bg-img);
+        backdrop-filter: blur(15px);
+        color: var(--color-white);
+        box-shadow: 0.1em 0.1em 0.4em 0.3em var(--color-iobutton);
+        font-family: inherit;
+        transition: transform 0.2s;
+        font-family: var(--font-family-montserrat);
+    }
+    .contact-cgc-web-btn:hover {
+        transition: all;
+        transition-duration: 0.5s;
+        color: aliceblue;
+        transform: scale(0.96);
+        box-shadow: 0.1em 0.1em 0.3em 0.4em var(--color-iobutton);
+    }
+    
+.contact-us-icons-cgc{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width:100%;
+    flex-wrap: wrap;
+    
+    }
+
+.contact-map{
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+.contact-gps-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact-gps{
+    display: flex;
+    padding: 2rem;
+    width: 95%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+    backdrop-filter: blur(50px);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-gps-heading {
+    text-align: right;
+    width: 100%;
+    font-family: var(--font-family-montserrat);
+}
+.contact-gps-address{
+    text-align: right;
+    font-family: var(--font-family-montserrat);
+}
+
+
+
+@media(max-width:1400px){
+    .contact-gps{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .contact-gps-heading{
+        text-align: center;
+        font-family: var(--font-family-montserrat);
+    }
+    .contact-gps-address{
+        text-align: center;
+        font-family: var(--font-family-montserrat);
+    }
+    .contact-us-icons-cgc{
+        justify-content: center;
+    }
+}
+@media(max-width:500px){
+    
+    .contact-gps-heading{
+        font-size: larger;
+        text-align: center;
+        font-family: var(--font-family-montserrat);
+    }
+    
+}
