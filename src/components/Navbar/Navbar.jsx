@@ -88,7 +88,7 @@ const Navbar = () => {
               <p className="navbar-halo-text">The Seagull Store</p>
             </a>
           </div>
-          <div className="navbar-links_container">
+          <div className="navbar-icons-left">
             <FontAwesomeIcon icon={faSearch} />
             <FontAwesomeIcon icon={faUser} />
 
