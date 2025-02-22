@@ -4,7 +4,7 @@ import { Menu } from "../Menu/Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import inditech from "../../assets/Core/logo.png";
+import inditech from "../../assets/Core/logo2.png";
 import { Social } from "../Social/Social";
 import axios from "../../api/axios";
 
@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-main-container">
-        <div className="footer-map-parent">
+        {/* <div className="footer-map-parent">
           <iframe
             title="gps"
             className="footer-map"
@@ -60,7 +60,7 @@ const Footer = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-        </div>
+        </div> */}
         <div className="footer-core-container">
           <h2>Quick Links</h2>
           <div className="footer-navbar">
