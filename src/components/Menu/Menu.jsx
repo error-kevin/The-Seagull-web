@@ -6,13 +6,13 @@ export const Menu = ({ className }) => {
   return (
     <div className={`menu-main ${className}`}>
       <Link to="/home">
-        <p className="menu-home-text menu-txt">Men</p>
+        <p className="menu-home-text menu-txt">Home</p>
       </Link>
       <Link to="/about">
-        <p className="menu-about-text menu-txt">Women</p>
+        <p className="menu-about-text menu-txt">Men</p>
       </Link>
       <Link to="/events">
-        <p className="menu-events-text menu-txt">Kids</p>
+        <p className="menu-events-text menu-txt">Women</p>
       </Link>
 
       {/* <Link to="/members">

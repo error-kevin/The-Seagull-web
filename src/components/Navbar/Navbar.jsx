@@ -89,10 +89,10 @@ const Navbar = () => {
             </a>
           </div>
           <div className="navbar-icons-left">
-            <FontAwesomeIcon icon={faSearch} />
-            <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon className="navbar-icon" icon={faSearch} />
+            <FontAwesomeIcon className="navbar-icon" icon={faUser} />
 
-            <FontAwesomeIcon icon={faCartShopping} />
+            <FontAwesomeIcon className="navbar-icon" icon={faCartShopping} />
           </div>
         </div>
         <div className="navbar-actions">

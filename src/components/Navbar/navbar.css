@@ -51,6 +51,7 @@
   object-fit: cover;
   height: fit-content;
   filter: drop-shadow(0 0 5px var(--font-color2));
+  
 }
 .navbar-links_logo {
   justify-content: space-between;
@@ -69,13 +70,51 @@
 
   cursor: pointer;
 }
-.menu-txt:hover {
-  filter: drop-shadow(0 0 5px white);
+
+.navbar-icon {
+  transition: color 0.3s ease, opacity 0.3s ease; /* Fade effect */
+  opacity: 1; /* Initially fully visible */
 }
-.menu-txt {
-  font-weight: 600;
+.navbar-icon:hover {
+  color: black; /* Change color on hover */
+  opacity: 0.5; /* Fade effect */
 }
 
+.navbar-icon::before {
+  width: 100%; /* Full width when hovered */
+}
+
+.menu-txt {
+  font-family:Futura,sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative; /* Positioning context for the underline */
+  display: inline-block; /* Allows for the underline to move */
+  transition: color 0.3s ease, opacity 0.3s ease; /* Fade effect */
+  opacity: 1; /* Initially fully visible */
+}
+
+.menu-txt:hover {
+  color: black; /* Change color on hover */
+  opacity: 0.5; /* Fade effect */
+}
+
+.menu-txt::before {
+  content: ''; /* Empty content for the underline */
+  position: absolute;
+  bottom: 0; /* Position it at the bottom of the text */
+  left: 0;
+  width: 0; /* Start with zero width */
+  height: 1px; /* Thickness of the underline */
+  background-color: black; /* Underline color */
+  transition: width 0.3s ease; /* Animation for the underline */
+}
+
+.menu-txt:hover::before {
+  width: 100%; /* Full width when hovered */
+}
 .navbar-links_container {
   display: flex;
   flex-direction: row;
@@ -308,13 +347,23 @@
 }
 
 .navbar-halo-text:hover {
-  filter: drop-shadow(0px 0px 3px white);
+  filter: drop-shadow(0px 0px 9px white);
+  text-decoration: underline;
+  color: black;
 }
 .navbar-halo-text {
   letter-spacing: 2px;
 }
+.navbar-halo-text{
+    display: flex;
+    justify-content: center;  /* Centers text horizontally */
+    align-items: center;      /* Centers text vertically */
+    height: 100vh;            /* Sets container height (optional, for vertical centering) */
+  
+}
 .navbar-halo-text:active,
 .navbar-halo-text:focus {
+
   box-shadow: 2px 2px 6px var(--glow), -2px -2px 6px var(--glow);
   transform: scale(0.97);
   transition: 0.25s;
