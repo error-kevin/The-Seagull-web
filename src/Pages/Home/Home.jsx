@@ -54,11 +54,24 @@ const Home = () => {
         <div className="home-products-row-container">
           {clothingProducts.map((product, index) => (
             <div className="home-product-card" key={index}>
-              <img src={bg1} className="product-card-img" alt="" />
+              <img src={product.img} className="product-card-img" alt="" />
               <div className="product-card-details">
                 <p>{product.name}</p>
-                <p className="product-card-price-text">₹{product.price}</p>
-                <p>{product.inStock ? "Availble" : "Out of Stock"}</p>
+                <p className="product-card-price-text">
+                  <p style={{ textDecoration: "line-through", color: "gray" }}>
+                    ₹{product.mrp}
+                  </p>
+                  <p>₹{product.currentPrice}</p>
+                  <p>
+                    Sale:{" "}
+                    {Math.round(
+                      ((product.mrp - product.currentPrice) / product.mrp) * 100
+                    )}
+                    % OFF
+                  </p>
+                </p>
+
+                <p>{product.inStock ? "Available" : "Out of Stock"}</p>
                 <div className="product-size-container">
                   Sizes:
                   {product.size.map((size, index) => (
@@ -84,6 +97,15 @@ const Home = () => {
                     <FontAwesomeIcon icon={faStarHalfAlt} />
                   )}
                 </div>
+              </div>
+              <div className="product-card-sale">
+                <p>
+                  Sale:{" "}
+                  {Math.round(
+                    ((product.mrp - product.currentPrice) / product.mrp) * 100
+                  )}
+                  % OFF
+                </p>
               </div>
             </div>
           ))}

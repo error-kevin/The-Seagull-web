@@ -1,9 +1,19 @@
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(
+  require.context("../../assets/Clothing/", false, /\.(png|jpe?g|JPG|webp)$/)
+);
+
 export const clothingProducts = [
   {
     id: 1,
+    img: images[0],
     name: "Classic White T-Shirt",
     category: "Tops",
-    price: 499,
+    mrp: 699,
+    currentPrice: 499,
     size: ["S", "M", "L", "XL"],
     color: ["White", "Black", "Gray"],
     inStock: true,
@@ -11,9 +21,11 @@ export const clothingProducts = [
   },
   {
     id: 2,
+    img: images[1],
     name: "Denim Jacket",
     category: "Jackets",
-    price: 1999,
+    mrp: 2499,
+    currentPrice: 1999,
     size: ["M", "L", "XL"],
     color: ["Blue", "Black"],
     inStock: true,
@@ -21,9 +33,11 @@ export const clothingProducts = [
   },
   {
     id: 3,
+    img: images[2],
     name: "Slim Fit Jeans",
     category: "Bottoms",
-    price: 1499,
+    mrp: 1799,
+    currentPrice: 1499,
     size: ["28", "30", "32", "34", "36"],
     color: ["Blue", "Black"],
     inStock: false,
@@ -31,9 +45,11 @@ export const clothingProducts = [
   },
   {
     id: 4,
+    img: images[3],
     name: "Summer Dress",
     category: "Dresses",
-    price: 1799,
+    mrp: 2199,
+    currentPrice: 1799,
     size: ["S", "M", "L"],
     color: ["Red", "Yellow", "Pink"],
     inStock: true,
@@ -41,9 +57,11 @@ export const clothingProducts = [
   },
   {
     id: 5,
+    img: images[4],
     name: "Hooded Sweatshirt",
     category: "Sweatshirts",
-    price: 1299,
+    mrp: 1599,
+    currentPrice: 1299,
     size: ["S", "M", "L", "XL"],
     color: ["Gray", "Green", "Black"],
     inStock: true,
@@ -51,9 +69,11 @@ export const clothingProducts = [
   },
   {
     id: 6,
+    img: images[5],
     name: "Cargo Pants",
     category: "Bottoms",
-    price: 1599,
+    mrp: 1899,
+    currentPrice: 1599,
     size: ["30", "32", "34", "36"],
     color: ["Khaki", "Olive", "Black"],
     inStock: true,
@@ -61,9 +81,11 @@ export const clothingProducts = [
   },
   {
     id: 7,
+    img: images[6],
     name: "Floral Print Skirt",
     category: "Skirts",
-    price: 999,
+    mrp: 1299,
+    currentPrice: 999,
     size: ["S", "M", "L"],
     color: ["White", "Blue", "Green"],
     inStock: false,
@@ -71,9 +93,11 @@ export const clothingProducts = [
   },
   {
     id: 8,
+    img: images[7],
     name: "Leather Jacket",
     category: "Jackets",
-    price: 2999,
+    mrp: 3499,
+    currentPrice: 2999,
     size: ["M", "L", "XL"],
     color: ["Black", "Brown"],
     inStock: true,
