@@ -3,6 +3,8 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  height: 65px;
+  background-color: white;
 }
 .navbar-core {
   display: flex;
