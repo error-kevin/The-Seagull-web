@@ -3,7 +3,7 @@ import "./Carousel.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"; // Ensure you import carousel styles
 
-const Gallery = ({ images, responsive }) => {
+const Gallery = ({ images,showDots=true, responsive, className }) => {
   const galleryItems = images.map((image, index) => (
     <div key={index} className="carousel-card">
       <img
@@ -19,11 +19,13 @@ const Gallery = ({ images, responsive }) => {
       <div className="carousel-box">
         <div className="carousel-gallery-slideshow">
           <Carousel
-            showDots={false}
+            showDots={showDots}
             responsive={responsive}
             autoPlay={true}
             autoPlaySpeed={5000}
             infinite={true}
+            arrows={false}
+            className={className}
           >
             {galleryItems}
           </Carousel>

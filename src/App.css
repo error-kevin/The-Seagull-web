@@ -4,11 +4,7 @@
 }
 body {
   /* background-color: var(--bg-color); */
-  background: radial-gradient(
-    circle,
-    var(--bg-color) 40%,
-    var(--fg-color) 100%
-  );
+  background: white;
   color: var(--font-color2);
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 0;

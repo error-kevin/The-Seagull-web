@@ -29,15 +29,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    135deg,
-    #4286f5 25%,
-    #ea4235 25%,
-    #ea4235 50%,
-    #109d58 50%,
-    #109d58 75%,
-    #fabd03 75%
-  );
+  background: white;
   border-radius: 10px;
 }
 

@@ -8,6 +8,7 @@
 .react-multi-carousel-list {
   justify-content: center;
 }
+
 .carousel-main {
   align-items: center;
   display: flex;
@@ -28,12 +29,11 @@
 }
 
 .carousel-core {
-  box-shadow: 2px 2px 14px 4px rgb(0, 0, 0);
+  /* box-shadow: 2px 2px 14px 4px rgb(0, 0, 0); */
   backdrop-filter: blur(12px);
   height: 100%;
   width: 100%;
-  padding: 1rem;
-  border-radius: 15px;
+  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,7 +46,7 @@
 
 .carousel-card {
   box-shadow: 0 4px 8px 0 var(--black-drop-shadow);
-  width: 95%;
+  width: 100%;
   aspect-ratio: 16/9;
   height: 300px;
   align-self: center;

@@ -95,9 +95,6 @@
   flex-direction: column;
   justify-content: center;
 }
-.carousel-core {
-  background-color: rgba(66, 131, 243, 0.3);
-}
 .ace-info {
   display: flex;
   justify-content: center;

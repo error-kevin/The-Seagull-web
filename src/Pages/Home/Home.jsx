@@ -2,8 +2,10 @@ import { React, useEffect, useState, useRef } from "react";
 import "./Home.css";
 import Gallery from "../../components/Carousel/Carousel";
 import { useNavigate } from "react-router-dom";
-import bg1 from "../../assets/BGs/1191971 (1).jpg";
-import bg2 from "../../assets/BGs/BG Plain.png";
+import bg1 from "../../assets/BGs/1375761.jpg";
+import { clothingProducts } from "./home-data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -20,25 +22,6 @@ const Home = () => {
     imageurl: image,
   }));
 
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 1024 },
-      items: 3,
-      slidesToSlide: 1,
-    },
-    desktop: {
-      breakpoint: { max: 1024, min: 800 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 800, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
   const responsive2 = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1024 },
@@ -61,9 +44,50 @@ const Home = () => {
 
   return (
     <div className="home-main">
+      <Gallery
+        images={productData}
+        responsive={responsive2}
+        className={"home-main-bg-carousel"}
+      />
       <div className="home-core">
-        <Gallery images={productData} responsive={responsive2} />
-        <Gallery images={productData} responsive={responsive} />
+        <h1>Summer Collection</h1>
+        <div className="home-products-row-container">
+          {clothingProducts.map((product, index) => (
+            <div className="home-product-card" key={index}>
+              <img src={bg1} className="product-card-img" alt="" />
+              <div className="product-card-details">
+                <p>{product.name}</p>
+                <p className="product-card-price-text">₹{product.price}</p>
+                <p>{product.inStock ? "Availble" : "Out of Stock"}</p>
+                <div className="product-size-container">
+                  Sizes:
+                  {product.size.map((size, index) => (
+                    <p>{size}</p>
+                  ))}
+                </div>
+                <div className="product-size-container">
+                  Colors:
+                  {product.color.map((color, index) => (
+                    <div
+                      key={index}
+                      className="product-color-icon"
+                      style={{ backgroundColor: color }}
+                    ></div>
+                  ))}
+                </div>
+                <div className="product-size-container">
+                  Rating:
+                  {[...Array(Math.floor(product.rating))].map((_, index) => (
+                    <FontAwesomeIcon key={index} icon={faStar} />
+                  ))}
+                  {product.rating % 1 !== 0 && (
+                    <FontAwesomeIcon icon={faStarHalfAlt} />
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
