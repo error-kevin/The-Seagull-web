@@ -20,6 +20,7 @@
     "firebase": "^10.8.0",
     "framer-motion": "^12.4.0",
     "gapi-script": "^1.2.0",
+    "GDGOCSVVV": "file:",
     "jwt-decode": "^3.1.2",
     "mdb-react-ui-kit": "^6.3.0",
     "mdb-ui-kit": "^6.4.2",

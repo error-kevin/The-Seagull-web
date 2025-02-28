@@ -50,7 +50,7 @@ const Home = () => {
         className={"home-main-bg-carousel"}
       />
       <div className="home-core">
-        <h1>Summer Collection</h1>
+        <h1>Our Collection</h1>
         <div className="home-products-row-container">
           {clothingProducts.map((product, index) => (
             <div className="home-product-card" key={index}>
