@@ -145,7 +145,7 @@ const Footer = () => {
           |
           <Link to="/devs">
             <h3 className="footer-copyright-para">
-              Developed By{" "}
+              Developed By{" Kevin &"}
               <img className="footer-inditech-logo" src={inditech} alt="" />
             </h3>
           </Link>
