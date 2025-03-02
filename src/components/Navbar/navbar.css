@@ -33,7 +33,7 @@
 }
 .navbar-actions {
   display: flex;
-}
+} 
 
 .navbar-pfp-container {
   width: 50px;
@@ -80,6 +80,7 @@
 .navbar-icon {
   transition: color 0.3s ease, opacity 0.3s ease; /* Fade effect */
   opacity: 1; /* Initially fully visible */
+  display: flex;
 }
 .navbar-icon:hover {
   color: black; /* Change color on hover */
@@ -240,12 +241,12 @@
 
 @media screen and (max-width: 350px) {
   .navbar-halo-text {
-    display: none;
+    display: flex;
   }
 }
 @media screen and (max-width: 460px) {
   .navbar-halo-text {
-    display: none;
+    display: flex;
   }
 }
 @media screen and (max-width: 1050px) {
