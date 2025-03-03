@@ -36,7 +36,7 @@ export const Social = ({ className }) => {
       >
         <FontAwesomeIcon className={`${className}-logos`} icon={faPinterest} />{" "}
       </a> }
-      <a href="theseagullstore@gmail.com" target="_blank" rel="noreferrer">
+      <a href="mailto:theseagullstore@gmail.com" target="_blank" rel="noreferrer">
         <FontAwesomeIcon className={`${className}-logos`} icon={faEnvelope} />{" "}
       </a>
     </div>

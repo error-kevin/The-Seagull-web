@@ -1,6 +1,6 @@
 import { React, useEffect, useState, useRef } from "react";
 import "./Home.css";
-import Gallery from "../../components/Carousel/Carousel";
+import {Carousel} from "../../components";
 import { useNavigate } from "react-router-dom";
 import bg1 from "../../assets/BGs/1375761.jpg";
 import { clothingProducts } from "./home-data";
@@ -24,31 +24,21 @@ const Home = () => {
 
   const responsive2 = {
     superLargeDesktop: {
-      breakpoint: { max: 4000, min: 1024 },
+      breakpoint: { max: 4000, min: 0 },
       items: 1,
       slidesToSlide: 1,
     },
-    desktop: {
-      breakpoint: { max: 1024, min: 800 },
-      items: 1,
-    },
-    tablet: {
-      breakpoint: { max: 800, min: 464 },
-      items: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
+    
   };
 
   return (
     <div className="home-main">
-      <Gallery
+      <Carousel
         images={productData}
         responsive={responsive2}
         className={"home-main-bg-carousel"}
       />
+      {/* <video className="home-main-bg-carousel" src="" /> */}
       <div className="home-core">
         <h1>Our Collection</h1>
         <div className="home-products-row-container">

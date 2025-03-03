@@ -64,11 +64,6 @@ const Navbar = () => {
     <div className="navbar">
       <div
         className="navbar-core"
-        // style={{
-        //   background: gradient,
-        // }}
-        // onMouseMove={handleMouseMove}
-        // onMouseLeave={handleMouseLeave}
       >
         <div className="navbar-links">
           <div className="navbar-links_container">
@@ -118,16 +113,17 @@ const Navbar = () => {
               </Link>
             </div>
           )}
+
           <div className="navbar-menu">
             {toggleMenu ? (
               <RiCloseLine
-                color="#fff"
+                // color="#fff"
                 size={27}
                 onClick={() => setToggleMenu(false)}
               />
             ) : (
               <RiMenu3Line
-                color="#fff"
+                // color="#fff"
                 size={27}
                 onClick={() => setToggleMenu(true)}
               />

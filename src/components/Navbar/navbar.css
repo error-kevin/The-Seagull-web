@@ -1,4 +1,4 @@
-.navbar {
+  .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,19 +8,17 @@
   flex-direction: column;
   width: 100%;
   height: 65px;
-  padding: 10px 20px;  /* Reduce padding if needed */
+  padding: 0.5rem 1rem;  /* Reduce padding if needed */
+  padding-bottom: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.352);
   background-color: white;
 }
 .navbar-core {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
+  height: 100%;
   align-items: center;
-  /* backdrop-filter: blur(50px); */
-  padding: 0.5rem;
-  /* border: 1px solid white; */
-
-  /* border-radius: 15px; */
 }
 .navbar-links {
   display: flex;
@@ -28,7 +26,6 @@
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 15px;
   height: 100%;
 }
 .navbar-actions {
@@ -154,7 +151,7 @@
 .navbar-sign p,
 .navbar-menu_container p {
   color: var(--font-color);
-  font-family: var(--font-family-akira);
+  font-family: Futura,sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
@@ -185,7 +182,6 @@
 }
 
 .navbar-menu {
-  margin-left: 1rem;
   display: none;
   position: relative;
 }
@@ -264,9 +260,6 @@
 }
 
 @media screen and (max-width: 870px) {
-  .navbar {
-    padding: 1rem 1rem;
-  }
 
   .navbar-menu_container-link-sign {
     display: none;

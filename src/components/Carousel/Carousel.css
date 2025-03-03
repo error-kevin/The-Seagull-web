@@ -5,9 +5,6 @@
   z-index: -1;
   width: 100%;
 }
-.react-multi-carousel-list {
-  justify-content: center;
-}
 
 .carousel-main {
   align-items: center;
@@ -23,6 +20,7 @@
 
 .carousel-box {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;

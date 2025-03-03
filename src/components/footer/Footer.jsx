@@ -143,12 +143,16 @@ const Footer = () => {
             </h3>
           </a>
           |
-          <Link to="/devs">
             <h3 className="footer-copyright-para">
-              Developed By{" Kevin &"}
+              Developed By
+              <>
+              <a href="https://github.com/error-kevin" target="_blank" rel="noreferrer">Kevin &</a>
+              <a href="https://www.inditech.in" target="_blank" rel="noreferrer">
               <img className="footer-inditech-logo" src={inditech} alt="" />
+              </a>
+              </>
             </h3>
-          </Link>
+            
         </div>
       </div>
     </div>

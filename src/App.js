@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import {
   Home,
-  Devs,
   PersistLogin,
   Sponsors,
   Socket,
@@ -77,7 +76,6 @@ const App = () => {
           <Route path="/members" element={<Members />} />
           <Route path="/HonouraryGuidance" element={<HonourGuide />} />
           <Route path="/h" element={<HonourGuide />} />
-          <Route path="/devs" element={<Devs />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Events" element={<Events />} />

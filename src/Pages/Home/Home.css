@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 1rem; */
+  margin-top: 65px;
   min-height: 100vh;
   gap: 1rem;
 }
@@ -13,8 +13,12 @@
   align-items: center;
   width: 100%;
 }
+.home-main-bg-carousel{
+  width: 100%;
+  max-height: 65vh;
+}
 .home-main-bg-carousel ul li .carousel-card {
-  height: 75vh;
+  height: 100%;
 }
 
 .home-main-bg-carousel ul li .carousel-card .carousel-product-image {
@@ -22,6 +26,7 @@
 }
 .home-products-row-container {
   display: flex;
+  padding: 0 1rem;
   width: 100%;
   gap: 5px;
   justify-content: space-evenly;
@@ -39,7 +44,8 @@
   height: 500px;
   overflow: hidden;
   flex: 1;
-  min-width: calc(25% - 10px);
+  min-width: 250px;
+  width: calc(25% - 10px);
   border-radius: 5px;
   border: 1px solid black;
   position: relative;
