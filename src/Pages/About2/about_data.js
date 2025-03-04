@@ -10,26 +10,26 @@ import details from "../../assets/Lottie/Animation - 1721405044830.json"; // Eve
 export const about_data = [
   {
     heading: "About Us",
-    desc: "Welcome to Google Developer Groups On Campus SVVV!\n\nWe are a vibrant community of developers and tech enthusiasts at Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore.\n\nJoin us in exploring emerging technologies such as artificial intelligence, machine learning, cloud computing, web development, and more.\n\nBecome a part of GDGOC SVVV and take the next step in your tech journey!",
+    desc: "Welcome to Our Store !\n\nAt The Seagull Store, we believe that luxury lies in the details.  We are passionate about creating high-quality oversized tees that are designed to last.  From the selection of premium fabrics to the meticulous stitching and finishing, every aspect of our garments is carefully considered.",
     icon: a4,
   },
   {
-    heading: "Our Mission",
-    desc: "Our mission is to empower students by providing them with the resources, knowledge, and support they need to innovate and excel in the field of technology. We aim to cultivate a culture of continuous learning and collaboration, helping students gain valuable experience and build meaningful connections within the tech community.",
+    heading: "Our commitment",
+    desc: "Our commitment to quality extends beyond the product itself. We are dedicated to providing exceptional customer service and building a community of like-minded individuals who appreciate timeless style and conscious consumption.",
     icon: a3,
   },
   {
-    heading: "What We Do?",
-    desc: "At GDG On Campus SVVV, we organize a variety of events and initiatives aimed at developing technical skills and fostering innovation. From workshops on cutting-edge technologies like AI, machine learning, and cloud computing, to hackathons that challenge students to build real-world solutions, we provide a platform for growth and experimentation. We also focus on mentorship, offering guidance and support to students as they explore new areas of technology.",
+    // heading: "What We Do?",
+    desc: "Discover the difference of The Seagull Store. Experience comfort, style, and enduring quality.",
     icon: a1,
   },
 
-  {
-    heading: "Event Details",
-    desc: "GDG SVVV organizes a variety of events throughout the year, including workshops, hackathons, and tech talks. Participants will have the chance to work on projects, learn from experts, and present their ideas. Stay tuned for our upcoming events and join us in this exciting journey to push the boundaries of technology!",
-    btntxt: "Our Events",
-    btn: "/events",
+  // {
+  //   heading: "Event Details",
+  //   desc: "GDG SVVV organizes a variety of events throughout the year, including workshops, hackathons, and tech talks. Participants will have the chance to work on projects, learn from experts, and present their ideas. Stay tuned for our upcoming events and join us in this exciting journey to push the boundaries of technology!",
+  //   btntxt: "Our Events",
+  //   btn: "/events",
 
-    icon: a5,
-  },
+  //   icon: a5,
+  // },
 ];

@@ -8,6 +8,9 @@ export const Menu = ({ className }) => {
       <Link to="/home">
         <p className="menu-home-text menu-txt">Home</p>
       </Link>
+      <Link to="/products">
+        <p className="menu-about-text menu-txt">Products</p>
+      </Link>
       <Link to="/about">
         <p className="menu-about-text menu-txt">Men</p>
       </Link>

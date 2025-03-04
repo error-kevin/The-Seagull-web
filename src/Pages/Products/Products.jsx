@@ -8,7 +8,7 @@ import sample from "../../assets/Team images/sampleimg.png"
 
 const Members = () => {
     useEffect(() => {
-        document.title = 'Our Products | Inditech.in';
+        document.title = 'Our Products | TheSeagullStore';
     }, []);
 
     return (
