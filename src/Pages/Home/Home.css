@@ -12,8 +12,25 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: relative;
 }
-.home-main-bg-carousel{
+.home-exp-btn {
+  position: absolute;
+  right: 1rem;
+  border-radius: 15px;
+  height: 75px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 800;
+  aspect-ratio: 1/1;
+  padding: 1rem;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+
+  top: 50%;
+}
+.home-main-bg-carousel {
   width: 100%;
   max-height: 65vh;
 }

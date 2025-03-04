@@ -3,6 +3,7 @@ import {
   Home,
   PersistLogin,
   Sponsors,
+  Products,
   Socket,
   Gallery,
   Privacy,
@@ -66,6 +67,7 @@ const App = () => {
           {/* Public routes */}
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/unauthorised" element={<Unauthorised />} />
           <Route path="/pagenotfound" element={<Pagenotfound />} />
           <Route path="/sponsors" element={<Sponsors />} />
