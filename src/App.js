@@ -3,6 +3,7 @@ import {
   Home,
   PersistLogin,
   Sponsors,
+  About2,
   Products,
   Socket,
   Gallery,
@@ -75,6 +76,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
 
+          <Route path="/about" element={<About2 />} />
           <Route path="/members" element={<Members />} />
           <Route path="/HonouraryGuidance" element={<HonourGuide />} />
           <Route path="/h" element={<HonourGuide />} />

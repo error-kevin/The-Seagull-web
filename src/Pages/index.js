@@ -1,6 +1,7 @@
 export { default as Home } from "./Home/Home.jsx";
 export { default as Products } from "./Products/Products.jsx";
 export { default as Members } from "./Members/Members";
+export { default as About2 } from "./About2/About2";
 export { default as HonourGuide } from "./HonourGuide/HonourGuide";
 export { default as Events } from "./Events/Events";
 export { default as Schedule } from "./Schedule/Schedule";
