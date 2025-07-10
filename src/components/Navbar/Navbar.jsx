@@ -80,6 +80,12 @@ const Navbar = () => {
               </div>
             </a> */}
             <a href="home">
+<<<<<<< Updated upstream
+=======
+              <img className="navbar-logo-image" alt="logo" src={miragelogo} />
+            </a>
+            <a href="home">
+>>>>>>> Stashed changes
               <p className="navbar-halo-text">The Seagull Store</p>
             </a>
           </div>

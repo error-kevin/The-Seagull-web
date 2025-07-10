@@ -36,11 +36,16 @@
     "react-router": "^6.11.1",
     "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
+<<<<<<< Updated upstream
     "react-simple-typewriter": "^5.0.1",
     "smooth-scrollbar": "^8.8.4",
     "socket.io-client": "^4.8.0",
     "TheSeagullStore": "file:",
     "typewriter-effect": "^2.21.0",
+=======
+    "Seagull": "file:",
+    "skulpt": "^1.2.0",
+>>>>>>> Stashed changes
     "web-vitals": "^3.5.1"
   },
   "devDependencies": {
